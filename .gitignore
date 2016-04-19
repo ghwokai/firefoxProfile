@@ -14,8 +14,8 @@
 !/Profiles/myUse/stylish.sqlite
 !/Profiles/myUse/desktop.ini
 !/Profiles/myUse/searchplugins/*
-!/Profiles/myUse/other/*
-!/Profiles/myUse/other/*/*
+!/other/*
+!/other/*/*
 !/Profiles/myUse/gm_scripts/*
 !/Profiles/myUse/gm_scripts/*/*
 !/Profiles/myUse/chrome/*
