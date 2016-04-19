@@ -1,0 +1,9 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>绿色软件联盟</os:ShortName>
+<os:Description>绿色软件联盟</os:Description>
+<os:InputEncoding>gbk</os:InputEncoding>
+<os:Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADLElEQVQ4jT2TW0ybZQCGP70w24WJFx7inYlZZjJ3wX4WYqrJ9GImzkQzjRdGnZpo5oXGEbNlbBMQGEhKORTKsS2HApXDKpuTQ1FbRtehsALpeu7f45wDXCwUBEr/x4vOXry3T/I+eV8hYyBAEyHakTEQoY8YA8QwE94bIKoMEsWETDdhOgnSjI86PFQRogURQIuHavzUE1R0WFKlzGxpCCs9RJQ+ZPT52FON2NJluCljibN4qEKE6cRPI2E6qIyfRpqXkOYlXlooQvWpnZMfRCmpdeUhlpVy7KlG3JTiQ43wZYyElA6Ce70UOIo4elPFwUkVh2YlnvlSjRAgHt3j6We3GLJNI2Ng+p8qPFQToAkRVczMrrfgXDdwaFaiIl7MiuLkE8dXPNdzksOvyXy/pEbVWMH+J9JYnBPMbtTjQ0OIVkSCK1y/ryWwY+HArxInlo9TnyxnLXsH+8ok/rSTB7iwembYVzjD8y+k8Gwbub2jIUwXIskYpkALyewkr9jfyDsYXTXxL3+RJk4KH4ffdeTqCDBNTbO404SMEXGXa7jTI5gCRs66LnDkjxygNHKJDJtss8oGMm82tyIeX0OILBfVC/izbUTozgGSjFHl1LK0PsUB61GO/X6c2w9c7LHNYtrJ+G9/4t+8QYNXjXgqxuW2OcJ0/A+4ShILZQ4NiV0HZ+YvUDBXiCt9k78zCVS3XmV/wS2KS+7x2Tkvj+zbZCZy5eHwjIgkFuIMY42NoPPoSOw6UVnfomi+KO/jyS/q8v3fL14gQi9BWgijR8QZIko/SX7kPUsJqzhwb1gpnDjBiw6JgzaJI4Mf8fI3P/D1aDuhzCAyevw0EKIdEaUfGT0xzHw8WklzoJb72Iju/kJ/rA3Xxhj3FCt3+Yk4w8hKN3NbGmzpcnxZLSJ3pmZkDEwsX+WxU5d5ffxDvl28yLmF85yeqOCdtibOXNNwaaqeLm8102s1uJXv8KNBBNHhpZYAWsJ0Yrb/zNufuzhVMUm1/gbji9cJZXKnCqLDRx13qGSZ83ipQUToeSikiwi9xBggzhAJRkgwQpxhYpiJ0oeMgRCt+GnASw0hdPwHgbEX1WPRHXsAAAAASUVORK5CYII=</os:Image>
+<os:Url type="text/html" method="GET" template="http://tag.xdowns.com/tag.asp" resultDomain="tag.xdowns.com">
+  <os:Param name="keyword" value="{searchTerms}"/>
+</os:Url>
+</SearchPlugin>

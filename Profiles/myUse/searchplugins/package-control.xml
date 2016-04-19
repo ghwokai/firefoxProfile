@@ -1,0 +1,9 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>package control</os:ShortName>
+<os:Description>package control</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAL0lEQVQ4jWMIT8j5HxafRRYOT8j5zxAWn/U/NC6TLBwWnzVqwKgBowZQzQBKszMApjcb4zWTE8sAAAAASUVORK5CYII=</os:Image>
+<os:Url type="text/html" method="GET" template="https://packagecontrol.io/search" resultDomain="packagecontrol.io">
+  <os:Param name="terms" value="{searchTerms}"/>
+</os:Url>
+</SearchPlugin>

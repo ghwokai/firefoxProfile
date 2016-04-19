@@ -1,0 +1,1104 @@
+<UserScriptConfig>
+	<Script basedir="iZhihu" checkRemoteUpdates="1" dependhash="a57d49ccc9fba30bfe1ec0c7cd0a8d7e482e413a" description="知乎插件" enabled="true" filename="iZhihu.user.js" installTime="1453888159682" modified="1453888159682" name="iZhihu" namespace="https://github.com/unogz/izhihu" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="924c33d9-c7ac-4168-b481-27786aee7b5c" version="2.13.2" installurl="https://greasyfork.org/scripts/350-izhihu/code/iZhihu.user.js" updateurl="https://greasyfork.org/scripts/350-izhihu/code/iZhihu.user.js" icon="icon64.png">
+		<Grant>GM_xmlHttpRequest</Grant>
+		<Grant>GM_addStyle</Grant>
+		<Grant>GM_getResourceText</Grant>
+		<Grant>GM_getResourceURL</Grant>
+		<Include>http://www.zhihu.com/*</Include>
+		<Include>https://www.zhihu.com/*</Include>
+		<Match>http://www.zhihu.com/*</Match>
+		<Match>https://www.zhihu.com/*</Match>
+		<Require filename="jquery.min.js"/>
+		<Require filename="icheck.min.js"/>
+		<Require filename="jquery-ui.min.js"/>
+		<Require filename="purl.min.js"/>
+		<Require filename="underscore-min.js"/>
+		<Resource name="jqUI_CSS" filename="blue.css" mimetype="text/css"/>
+		<Resource name="ui-bg_icheck-skin_square_blue" filename="blue.png" mimetype="image/png"/>
+		<Resource name="ui-bg_icheck-skin_square_blue2x" filename="blue@2x.png" mimetype="image/png"/>
+	</Script>
+	<Script author="Gerald &lt;gera2ld@163.com&gt;" basedir="Baidu_Multiuser" checkRemoteUpdates="1" dependhash="6804acf1c7108141be34b408430c6fbc19d8ea79" description="百度马甲切换" enabled="false" filename="160577.user.js" installTime="1426529574366" modified="1441673836995" name="Baidu Multiuser" namespace="http://gera2ld.blog.163.com/" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="5c0479c9-d419-41bf-8d17-f099fbf16982" version="1.4.3" installurl="https://userscripts.org/scripts/source/160577.user.js" updateurl="https://userscripts.org/scripts/source/160577.meta.js" icon="a0ad718d86d21262ccd6ff271ece08a3">
+		<Exclude>http://developer.baidu.com/*</Exclude>
+		<Exclude>http://web.im.baidu.com/*</Exclude>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_openInTab</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Include>*.baidu.com/*</Include>
+		<Match>*://*.baidu.com/*</Match>
+		<Require filename="186749.user.js"/>
+	</Script>
+	<Script author="Gantt" basedir="Download_YouTube_Videos_as_MP4" checkRemoteUpdates="1" dependhash="734b32e3bd42b025e72b9ea26f02171c23893210" description="Adds a button that lets you download YouTube videos." enabled="true" filename="Download_YouTube_Videos_as_MP4.user.js" installTime="1460138290402" modified="1460138290402" name="Download YouTube Videos as MP4" namespace="http://googlesystem.blogspot.com" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="827a5f93-567c-4f90-b089-64d22324c6c6" version="1.8.7" installurl="https://greasyfork.org/scripts/1317-download-youtube-videos-as-mp4/code/Download%20YouTube%20Videos%20as%20MP4.user.js" homepageurl="https://github.com/gantt/downloadyoutube" updateurl="https://greasyfork.org/scripts/1317-download-youtube-videos-as-mp4/code/Download%20YouTube%20Videos%20as%20MP4.user.js" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAB3RJTUUH2wMOCgIoGUYEAQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAARnQU1BAACxjwv8YQUAAAGSUExURfi/JO/v797e3sbGxq2traWlpZSUlJycnNbW1oyEhIRaWow5OZQhIZwYGKUQEKUICK0ICJQxMYxKSoxzc4x7e4RCQpQYGKUAAK0AALUAAL0AAK0QEIxra5QpKa0YGIxSUsYAAKUhIZR7e87Ozr0ICJRSUr29vYxjY6U5OaUpKa0hIb21tZwAALUICO/Ozu/GxqUxMZSEhLUYGO/W1r0YGKVCQpQQEL0pKffe3vfW1pxra5Q5OcZCQvfn585CQr2trZx7e8ZSUs5SUq05Oc5jY9ZjY84AAKWMjM5zc957e60pKdaMjOelpbWcnLWUlLVCQsYYGMYICNbOzpQICMYhIbV7e5xaWt6cnPfv79bGxt6lpe+9vc5KSs6lpb0xMc6EhM69vbUxMbUhIb1aWs61tcZaWuecnMYxMb1KSsZjY96UlNa1td7W1r17e9a9vZwQEN6trb1jY8YQENZra+fOzr1zc85aWufe3t6MjMY5OdZaWt61tdZ7e+/n5+e9vc6MjMZra+/e3ue1tdalpd7GxrUpKalL4aAAAAABdFJOUwBA5thmAAACxklEQVR42uXX/1/SQBgH8NuAoEQ2ijgbBivJLznBAiUUKiyJSgOVAk0tKZKw75mRRt/7v4MBY8ezjW39Vs8v8rqHz/u1jbvbidC/XL8KmcpOqVT6nSjXjooGw8WfFd+QWGfE4oLbtbr++PdMOy0BDYLjEj/0xevfWIyVAI7b/aIj/9WHsRrA8Yf9bqSexVgD4Lic9kWE/LgPwPGfNfJHDO4P8Iuq+S2M9QD8oUp+nxEAcFCtfgIA/14x/9ElAKDQbNQAwN9VAiYEABy0OgsAWAnB/AcBAtVWawkAfJ4CD0BQADZavYcQgI9h3CCQjpD5PcEgwG+SwLRhIL0vz78SjAPEU3hrHODfyX4I6rUJIP0G3oExoNwFXpoB+HwXmDEFpF9IwKA5YK+Tp9fMAdUOsC6YA553gKcmgdTfAhV1oMQqADndQDmJ0AZLAsFnCIV3VYDHJLAjDkZKciAaFz/lCeBJB1glgXBrNLndBWLJ9uZGAI+keTBLANL8SnWAzWRniAC2pG+6lQF0hfjTqCIBrEvjDwiggFSLuIUoLY0vEwAbUcsnc/LlnO02HGvEz+hXEeJ5Yj+4L2vNkxOJDSnlQzliIq2synr3embiUBjmw0FyU83KX04Ob+9aAK/Ppd5deZloz4HFlCHzt3sX0x2a6LcvQb4ab8r7i+DVdqvnCq/D5ZzqdhfAcr5B9wD0PNwPEu0ZnLwK9oPgNfCQJ2fhhhITJ3E8BjeUOXA+QNQlBh5xLjemVCgKjzgzNIJFjWF4yJoKhafgIWt6VHGmjgR0HvMuTipPdWQJ6AImbBRSE8aY/sC4er5xFx5vHyB4YRRpFWUf0AL4c+dHkHZRFo9TDeB9Aa3Llwjr8FlFwB+wO/rHm0VbPae9mPini/O5h/XGxatw2I6fGHAOuhiGZVxO98lTdgutP94yaIvVdqxZdpvFYTT9X9UfqQQlTXlm8wkAAAAASUVORK5CYII=">
+		<Exclude>http://www.youtube.com/embed/*</Exclude>
+		<Exclude>https://www.youtube.com/embed/*</Exclude>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Include>http://www.youtube.com/*</Include>
+		<Include>https://www.youtube.com/*</Include>
+		<Match>http://www.youtube.com/*</Match>
+		<Match>https://www.youtube.com/*</Match>
+		<Match>http://s.ytimg.com/yts/jsbin/html5player*</Match>
+		<Match>https://s.ytimg.com/yts/jsbin/html5player*</Match>
+		<Match>http://manifest.googlevideo.com/*</Match>
+		<Match>https://manifest.googlevideo.com/*</Match>
+		<Match>http://*.googlevideo.com/videoplayback*</Match>
+		<Match>https://*.googlevideo.com/videoplayback*</Match>
+		<Match>http://*.youtube.com/videoplayback*</Match>
+		<Match>https://*.youtube.com/videoplayback*</Match>
+	</Script>
+	<Script basedir="Enhanced_word_highlight" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Enhanced keywords highlight for Search Engines and All !" enabled="false" filename="Enhanced_word_highlight.user.js" installTime="1459412688362" modified="1459412688362" name="Enhanced word highlight" namespace="http://userscripts.org/users/86496" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="f6a3f822-57cf-4671-a787-a76bd5a39a15" version="1.5.8" installurl="https://greasyfork.org/scripts/7251-enhanced-word-highlight/code/Enhanced%20word%20highlight.user.js" updateurl="https://greasyfork.org/scripts/7251-enhanced-word-highlight/code/Enhanced%20word%20highlight.user.js">
+		<Exclude>http://maps.google.com/*</Exclude>
+		<Grant>GM_log</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_openInTab</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Include>http://*</Include>
+		<Include>https://*</Include>
+	</Script>
+	<Script basedir="Google_Translator_Tooltip_Expanded" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Translates the selected text into a tooltip automatically. Based on Google Translation Tooltip MLiteKeysOn." enabled="false" filename="googletranslatortooltipexpanded@my.tooltip.namespace.user.js" installTime="1426529686195" modified="1441673837709" name="Google Translator Tooltip Expanded" namespace="my.tooltip.namespace" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="de32b1d5-304e-4bf1-b297-7f8517b23a29" version="1.12" installurl="file:///D:/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/Google_Translator_Tooltip_Expanded/googletranslatortooltipexpanded@my.tooltip.namespace.user.js" updateurl="file:///D:/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/Google_Translator_Tooltip_Expanded/googletranslatortooltipexpanded@my.tooltip.namespace.user.js">
+		<Grant>GM_log</Grant>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_deleteValue</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_addStyle</Grant>
+		<Include>http*</Include>
+		<Include>https*</Include>
+		<Include>chrome*</Include>
+	</Script>
+	<Script author="Tago" basedir="Manga_OnlineViewer_CE" checkRemoteUpdates="1" dependhash="e364cd5eb5fd7ba48a19746da427ad2c7f971b28" description="Shows all pages at once in online view. MangaFox, MangaReader/MangaPanda, MangaStream, MangaInn, AnyManga, AnimeA, MangaHere, MangaShare, Batoto, MangaDevil, MangaCow, MangaChapter, 7manga, MangaPirate.net and MangaBee/OneManga.me manga sites. Fakku, HBrowse, Hentai2Read and Doujin-moe Hentai sites." enabled="false" filename="Manga_OnlineViewer_CE.user.js" installTime="1426691649556" modified="1441673837927" name="Manga OnlineViewer CE" namespace="https://greasyfork.org/users/1849-tago" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="5ca2626a-3efd-4db0-ab35-284bbf2aa3ab" version="2014.8.27.1" installurl="https://github.com/ywzhaiqi/userscript/raw/master/.%E4%BF%AE%E6%94%B9%E7%89%88/Manga_OnlineViewer_CE.user.js" updateurl="https://github.com/ywzhaiqi/userscript/raw/master/.%E4%BF%AE%E6%94%B9%E7%89%88/Manga_OnlineViewer_CE.user.js">
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>/http://mh.5652.com/mh/\d+/\d+/\d+.shtml/</Include>
+		<Include>/http://(www|manhua)\.(dmzj|178)\.com/.+/.+shtml/</Include>
+		<Include>/http://www\.imanhua\.com\/comic\/.+/</Include>
+		<Include>/http://www\.tuku\.cc/comic/.+/</Include>
+		<Include>/http://www\.xindm\.cn\/mh/.+/</Include>
+		<Include>http://www.kkkmh.com/manhua/*/*/*.html*</Include>
+		<Include>/http://www.jide123.(net|com)/manhua/.*.html/</Include>
+		<Include>/http://(www|tel)\.dm5\.com/.+/</Include>
+		<Include>/http://mangafox.me/manga/.+/.+//</Include>
+		<Include>/http://www.mangareader.net/.+/.+/</Include>
+		<Include>/http://www.mangapanda.com/.+/.+/</Include>
+		<Include>/http://.*(mangastream|readms).com/r.*/.+/</Include>
+		<Include>/http://www.mangainn.com/manga/chapter/.+/</Include>
+		<Include>/http://www.anymanga.com/.+/.+/.+/</Include>
+		<Include>/http://manga.animea.net/.+chapter.+.html/</Include>
+		<Include>/http://.*(7manga|boxmanga).com/online_manga/.+/</Include>
+		<Include>/http://www.mangahere.co/manga/.+/.+/</Include>
+		<Include>/http://www.batoto.net/read/.+/</Include>
+		<Include>/http://.*mangadevil.com/read/.+/</Include>
+		<Include>/http://www.manga2u.me/.+/.+//</Include>
+		<Include>/https://starkana.org/manga/.+/.+/chapter/.+/</Include>
+		<Include>/http://www.fakku.net/.+/.+/</Include>
+		<Include>/http://www.hbrowse.com/.+/</Include>
+		<Include>/http://www.doujin-moe.us/.+/</Include>
+		<Include>/http://hentai2read.com/.+/.+//</Include>
+		<Include>/http://mngacow.com/.+/.+//</Include>
+		<Include>/http://www.mangachapter.net/[0-9]+/.+/[0-9]+.+html/</Include>
+		<Include>/http://.*(mangabee|manga2u|onemanga|mangasky|mangamofo|mangadoom)\.(com|me)/.+/.+//</Include>
+		<Include>/http://*mangajoy.com/.+/.+/[0-9]+/</Include>
+		<Include>/http://www.mangabird.com/[a-z\-]+[0-9]+/</Include>
+		<Include>/http://eatmanga.com/Manga-Scan/.+/.+//</Include>
+		<Include>/http://.*senmanga.com/.+/.+\/?/</Include>
+		<Include>/http://manga.lyght.net/series/.+\.html/</Include>
+		<Include>/http://dynasty-scans.com/chapters/.+/</Include>
+		<Include>/http://luscious.net/c/.+/</Include>
+		<Include>/http://www.wondersluts.com/.+/</Include>
+		<Include>/http://hentaimangaonline.com/image/.+//</Include>
+		<Include>/http://exhentai.org/s/.+/.+/</Include>
+		<Include>/http://g.e-hentai.org/s/.+/.+/</Include>
+		<Include>/http://pururin.com/view/.+/.+/.+/</Include>
+		<Include>/https?://fufufuu.net/m/.+/.+/</Include>
+		<Include>/http://hentai4manga.com/hentai_manga/.+/.+/</Include>
+		<Include>/http://nhentai.net/g/.+/.+/</Include>
+		<Include>/.+/read/.+/</Include>
+		<Require filename="jquery-2.1.1.min.js"/>
+	</Script>
+	<Script author="kuehlschrank" basedir="Mouseover_Popup_Image_Viewer" checkRemoteUpdates="1" dependhash="f7349b092fc48df3a7e652a4b1e7b956cac4251d" description="Shows images and videos behind links and thumbnails." enabled="false" filename="Mouseover_Popup_Image_Viewer.user.js" installTime="1455683537262" modified="1455683537262" name="Mouseover Popup Image Viewer" namespace="http://w9p.co/userscripts/" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="0093092b-a054-45d6-b6d5-dd1c91c417d6" version="2016.2.2" installurl="https://greasyfork.org/scripts/404-mouseover-popup-image-viewer/code/Mouseover%20Popup%20Image%20Viewer.user.js" updateurl="https://greasyfork.org/scripts/404-mouseover-popup-image-viewer/code/Mouseover%20Popup%20Image%20Viewer.user.js" icon="icon.png">
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_openInTab</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Grant>GM_setClipboard</Grant>
+		<Include>http*</Include>
+	</Script>
+	<Script basedir="PCONLINE" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="自动跳转到全部页面显示" enabled="false" filename="pconline.user.js" installTime="1426529918089" modified="1441673838052" name="PCONLINE" namespace="ZPP" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="a8d45f1c-5687-4227-b0eb-83ab50959dd6" version="1" installurl="file:///D:/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/PCONLINE/pconline.user.js" updateurl="file:///D:/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/PCONLINE/pconline.user.js">
+		<Grant>none</Grant>
+		<Include>http://*.pconline.com.cn/*</Include>
+		<Include>http://*.zol.com.cn/*/*.html</Include>
+		<Include>http://www.pcpop.com/doc/*</Include>
+	</Script>
+	<Script author="NLF &amp;&amp; ywzhaiqi" basedir="picviewer_CE" checkRemoteUpdates="1" dependhash="8afde16be00ddda872f5db5a714c9e5c1615e427" description="NLF 的围观图修改版" enabled="false" filename="picviewer_CE.user.js" installTime="1449070727442" modified="1449070727442" name="picviewer CE" namespace="http://userscripts.org/users/NLF" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="9fd63124-a075-40a6-a4bc-c774d664902d" version="2015.7.10.0" installurl="https://greasyfork.org/scripts/5199-picviewer-ce/code/picviewer%20CE.user.js" updateurl="https://greasyfork.org/scripts/5199-picviewer-ce/code/picviewer%20CE.user.js">
+		<Exclude>http://www.toodledo.com/tasks/*</Exclude>
+		<Exclude>http*://maps.google.com*/*</Exclude>
+		<Exclude>*://www.google.*/_/chrome/newtab*</Exclude>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_addStyle</Grant>
+		<Grant>GM_openInTab</Grant>
+		<Grant>GM_setClipboard</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Include>http://*</Include>
+		<Include>https://*</Include>
+		<Require filename="GM_config_CN.js"/>
+	</Script>
+	<Script basedir="wingsmix_readimage" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="已经看过的图片显示红框" enabled="true" filename="readimage.user.js" installTime="1448000086618" modified="1459405461698" name="wingsmix readimage" namespace="taoww" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="4e71471b-ab5b-47e3-8c68-c89f5078dc29" version="1.1" installurl="file:///D:/GreenSoft/Firefox/Profiles/gm_scripts/readimage/readimage.user.js" updateurl="file:///D:/GreenSoft/Firefox/Profiles/gm_scripts/readimage/readimage.user.js">
+		<Exclude>*://tieba.baidu.com/*</Exclude>
+		<Exclude>*://hi.baidu.com/*</Exclude>
+		<Exclude>*://blog.sina.com.cn/*</Exclude>
+		<Exclude>*://*.blog.sina.com.cn/*</Exclude>
+		<Exclude>*://www.51.la/*</Exclude>
+		<Exclude>*://bbs.aicbbs.com/*</Exclude>
+		<Exclude>*://bbs.kafan.cn/*</Exclude>
+		<Exclude>*://bbs.3dmgame.com/*</Exclude>
+		<Exclude>*://bbs.d.163.com/*</Exclude>
+		<Grant>GM_addStyle</Grant>
+		<Include>http://photo.poco.cn/*</Include>
+		<Include>http://www.lesmao.net/*</Include>
+		<Include>http://www.zngirls.com/gallery/*</Include>
+	</Script>
+	<Script author="lkytal" basedir="Text_To_link" checkRemoteUpdates="1" dependhash="e4a7ebe0f088f30990f7e336fb8424e35a6b8f42" description="Turn plain text URLs into clickable links, 把文字链接转换为可点击链接" enabled="false" filename="linkMix.user.js" installTime="1430670340832" modified="1441673838598" name="Text To link" namespace="Lkytal" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="3bb134d9-3718-4d5c-9aea-7b6622c80aa4" version="2.6.9" installurl="https://git.oschina.net/coldfire/GM/raw/master/linkMix.user.js" homepageurl="https://git.oschina.net/coldfire/GM" updateurl="https://git.oschina.net/coldfire/GM/raw/master/meta/linkMix.meta.js" icon="ic.ico">
+		<Exclude>*pan.baidu.com/*</Exclude>
+		<Exclude>*renren.com/*</Exclude>
+		<Exclude>*exhentai.org/*</Exclude>
+		<Exclude>*music.google.com/*</Exclude>
+		<Exclude>*mail.google.com/*</Exclude>
+		<Exclude>*docs.google.com/*</Exclude>
+		<Exclude>*www.google.*</Exclude>
+		<Exclude>*acid3.acidtests.org/*</Exclude>
+		<Grant>unsafeWindow</Grant>
+		<Include>*</Include>
+	</Script>
+	<Script author="网络中二行客" basedir="Tieba_Client" checkRemoteUpdates="1" dependhash="6b8b6ca53a9e2bbcb4c0b65be2a89d9100a84e69" description="" enabled="false" filename="Tieba_Client.user.js" installTime="1426530029654" modified="1441673838785" name="Tieba Client" namespace="http://tieba.baidu.com" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="996f68c6-92a1-4702-a5c9-c7d806227743" version="0.9.4" installurl="https://github.com/FirefoxBar/userscript/raw/master/Tieba_Client/Tieba_Client.user.js" updateurl="https://github.com/FirefoxBar/userscript/raw/master/Tieba_Client/Tieba_Client.meta.js" icon="8a65d04bd11373f0075bca22a60f4bfbfaed04c9.jpg">
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>http://tieba.baidu.com/*</Include>
+		<Require filename="jquery.min.js"/>
+	</Script>
+	<Script author="Gerald &lt;gera2ld@163.com&gt;" basedir="Tieba_Utilities" checkRemoteUpdates="1" dependhash="bcbd69b4759b7fad81f5ee213f7dca15fe740709" description="百度贴吧依赖脚本（寂寞的原子的公共库）" enabled="true" filename="Tieba_Utilities.user.js" installTime="1437560013512" modified="1437560013512" name="Tieba Utilities" namespace="http://gera2ld.blog.163.com/" noframes="false" runAt="document-start" updateMetaStatus="ok" uuid="9dfc48da-4115-4580-aaca-f3be2faebc7b" version="0.9.1" installurl="https://greasyfork.org/scripts/118-tieba-utilities/code/Tieba%20Utilities.user.js" homepageurl="http://geraldl.net/userjs/TiebaUtils" updateurl="https://greasyfork.org/scripts/118-tieba-utilities/code/Tieba%20Utilities.user.js" icon="a0ad718d86d21262ccd6ff271ece08a3">
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Include>*.baidu.com/*</Include>
+		<Match>*://*.baidu.com/*</Match>
+	</Script>
+	<Script author="congxz6688" basedir="tiebaAllsign" checkRemoteUpdates="1" dependhash="ac9a5808e6774d58bb100a4376423fc405cf7d2f" description="贴吧集中签到" enabled="true" filename="tiebaAllsign.user.js" installTime="1437733487402" modified="1437733487402" name="tiebaAllsign" namespace="https://greasyfork.org/scripts/152" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="479665f7-8d76-4b2b-b0fb-173ca5bb959d" version="2015.7.21.2" installurl="https://greasyfork.org/scripts/152-tiebaallsign/code/tiebaAllsign.user.js" updateurl="https://greasyfork.org/scripts/152-tiebaallsign/code/tiebaAllsign.user.js" icon="4e2ed7f8bbb3d4f2c2d2bb21">
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_deleteValue</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>http://www.baidu.com/</Include>
+		<Include>https://www.baidu.com/</Include>
+		<Include>http://www.baidu.com/?vit=1</Include>
+		<Include>http://www.baidu.com/index.php?tn=baiduhome_pg</Include>
+		<Include>http://tieba.baidu.com/f?kw=*</Include>
+		<Include>http://tieba.baidu.com/f?ie=gbk&amp;kw=*</Include>
+		<Include>http://tieba.baidu.com/f?ie=utf-8&amp;kw=*</Include>
+		<Include>http://tieba.baidu.com/f?tp=0&amp;kw=*</Include>
+	</Script>
+	<Script author="congxz6688" basedir="tiebagogo" checkRemoteUpdates="1" dependhash="3afb792284770e0ad968c2e8b162755fdae07725" description="常逛的贴吧快速切换" enabled="true" filename="tiebagogo.user.js" installTime="1426530059195" modified="1448377679440" name="tiebagogo" namespace="https://greasyfork.org/scripts/151" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="275a71a0-5422-4176-831e-9cab786b4fca" version="2014.12.1.0" installurl="file:///D:/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/tiebagogo/tiebagogo.user.js" updateurl="file:///D:/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/tiebagogo/tiebagogo.user.js" icon="6fd108fb43166d229cb84fac452309f79152d2e2.png">
+		<Grant>none</Grant>
+		<Include>http://www.baidu.com/*</Include>
+		<Include>http://tieba.baidu.com/*</Include>
+	</Script>
+	<Script basedir="VeryCD_File_Show_Link" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="VeryCD 的文件页面直接显示下载地址而不是js按钮。" enabled="false" filename="VeryCD_File_Show_Link.user.js" installTime="1426530066911" modified="1441673839160" name="VeryCD File Show Link" namespace="http://qixinglu.com" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="e18746e5-adac-4c12-b3fa-ad0c6fd65a23" version="0.0.1.20140517140356" installurl="file:///D:/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/VeryCD_File_Show_Link/VeryCD_File_Show_Link.user.js" updateurl="file:///D:/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/VeryCD_File_Show_Link/VeryCD_File_Show_Link.user.js">
+		<Grant>none</Grant>
+		<Include>http://www.verycd.com/files/*</Include>
+	</Script>
+	<Script author="ywzhaiqi@gmail.com" basedir="verycd补全下载链接" checkRemoteUpdates="1" dependhash="0a9a3b430073f9b62e6f028f993fd2772204b4f1" description="在 verycd 页面直接显示下载链接，可通过多个站点获取，防止失效。" enabled="false" filename="code.user.js" installTime="1437186191195" modified="1437186191195" name="verycd补全下载链接" namespace="https://github.com/ywzhaiqi" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="374be274-025a-4a2d-b8e1-aa30c1f0108d" version="1.5.3" installurl="https://greasyfork.org/scripts/301/code.user.js" homepageurl="https://greasyfork.org/scripts/301/" updateurl="https://greasyfork.org/scripts/301/code.user.js">
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_addStyle</Grant>
+		<Include>http://www.verycd.com/topics/*</Include>
+		<Require filename="jquery-1.9.1.min.js"/>
+	</Script>
+	<Script basedir="楼中楼回复自动加@" checkRemoteUpdates="1" dependhash="07c2909cf1c9a3b893c56464adf21a7dcbf510c4" description="百度贴吧楼中楼回复自动加上@" enabled="false" filename="%25E6%25A5%25BC%25E4%25B8%25AD%25E6%25A5%25BC%25E5%259B%259E%25E5%25A4%258D%25E8%2587%25AA%25E5%258.user.js" installTime="1426530126198" modified="1441673840152" name="楼中楼回复自动加@" namespace="https://greasyfork.org/users/54" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="0048e91b-0cc2-4a15-af9b-d729d3ff1794" version="1.3" installurl="file:///D:/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A5%BC%E4%B8%AD%E6%A5%BC%E5%9B%9E%E5%A4%8D%E8%87%AA%E5%8A%A8%E5%8A%A0@/%25E6%25A5%25BC%25E4%25B8%25AD%25E6%25A5%25BC%25E5%259B%259E%25E5%25A4%258D%25E8%2587%25AA%25E5%258A%25A8%25E5%258A%25A0@.user.js" updateurl="file:///D:/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A5%BC%E4%B8%AD%E6%A5%BC%E5%9B%9E%E5%A4%8D%E8%87%AA%E5%8A%A8%E5%8A%A0@/%25E6%25A5%25BC%25E4%25B8%25AD%25E6%25A5%25BC%25E5%259B%259E%25E5%25A4%258D%25E8%2587%25AA%25E5%258A%25A8%25E5%258A%25A0@.user.js" icon="ca80e8b0b7e593a5e58dabe5a3abb020">
+		<Grant>none</Grant>
+		<Include>http://tieba.baidu.com/p/*</Include>
+		<Include>http://tieba.baidu.com/f?ct=*</Include>
+	</Script>
+	<Script author="Jixun.Moe&lt;Yellow Yoshi&gt;" basedir="跳过网站等待、验证码及登录" checkRemoteUpdates="1" dependhash="7af96902572e159ccfc4d5e42af3dc8646f8e2c1" description="移除各类网站验证码、登录、倒计时及更多!" enabled="false" filename="%E8%B7%B3%E8%BF%87%E7%BD%91%E7%AB%99%E7%AD%89%E5%BE%85%E3%80%81%E9%AA%8C%E8%AF%81%E7%A0%81%E5%8F%8A%E7%99.user.js" installTime="1456643269736" modified="1456643269736" name="跳过网站等待、验证码及登录" namespace="http://jixun.org/" noframes="false" runAt="document-start" updateMetaStatus="ok" uuid="550a3e21-7309-45da-b8ca-2d5bd41955f1" version="3.0.537" installurl="https://greasyfork.org/scripts/2600-%E8%B7%B3%E8%BF%87%E7%BD%91%E7%AB%99%E7%AD%89%E5%BE%85-%E9%AA%8C%E8%AF%81%E7%A0%81%E5%8F%8A%E7%99%BB%E5%BD%95/code/%E8%B7%B3%E8%BF%87%E7%BD%91%E7%AB%99%E7%AD%89%E5%BE%85%E3%80%81%E9%AA%8C%E8%AF%81%E7%A0%81%E5%8F%8A%E7%99%BB%E5%BD%95.user.js" updateurl="https://greasyfork.org/scripts/2600-%E8%B7%B3%E8%BF%87%E7%BD%91%E7%AB%99%E7%AD%89%E5%BE%85-%E9%AA%8C%E8%AF%81%E7%A0%81%E5%8F%8A%E7%99%BB%E5%BD%95/code/%E8%B7%B3%E8%BF%87%E7%BD%91%E7%AB%99%E7%AD%89%E5%BE%85%E3%80%81%E9%AA%8C%E8%AF%81%E7%A0%81%E5%8F%8A%E7%99%BB%E5%BD%95.user.js">
+		<Exclude>http://pos.baidu.com/*</Exclude>
+		<Exclude>http://gmail.com/*</Exclude>
+		<Exclude>http://.google.tld/*</Exclude>
+		<Exclude>http://*.gmail.com/*</Exclude>
+		<Exclude>http://*.google.tld/*</Exclude>
+		<Grant>unsafeWindow</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_openInTab</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_info</Grant>
+		<Include>http://*</Include>
+		<Include>https://jixunmoe.github.io/cuwcl4c/config/</Include>
+		<Require filename="jquery.js"/>
+		<Require filename="underscore.js"/>
+		<Require filename="core-min.js"/>
+		<Require filename="enc-base64-min.js"/>
+		<Require filename="md5-min.js"/>
+		<Require filename="CryptoJS-ByteArray.js"/>
+		<Require filename="Interval-Looper.js"/>
+		<Require filename="gm2-port-v104.js"/>
+		<Require filename="Aria2-RPC-build-9.js"/>
+		<Name lang="en">Bypass Wait, Code &amp; Login on Websites</Name>
+		<Description lang="en">Remove verify code, login requirement, counting down... and more!</Description>
+		<Name lang="zh-CN">跳过网站等待、验证码及登录</Name>
+		<Description lang="zh-CN">移除各类网站验证码、登录、倒计时及更多!</Description>
+		<Name lang="zh-TW">繞過站點等待、識別碼及登錄</Name>
+		<Description lang="zh-TW">移除各類站點識別碼、登錄、倒計時及更多!</Description>
+	</Script>
+	<Script basedir="百度云插件+APIKey" checkRemoteUpdates="1" dependhash="e364cd5eb5fd7ba48a19746da427ad2c7f971b28" description="在百度云网盘的页面添加一个搜索框，调用搜索API搜索所有公开分享文件// To add a search frame that calls some api for searching some public shared files in BaiduYun cloud netdisk." enabled="false" filename="%E7%99%BE%E5%BA%A6%E4%BA%91%E6%8F%92%E4%BB%B6+APIKey.user.js" installTime="1455427136764" modified="1455427136764" name="百度云插件+APIKey" namespace="greasyfork.org" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="5cadb057-c573-44ba-8a75-92e524ed67b1" version="4.5.0.1 beta" installurl="https://greasyfork.org/scripts/496-%E7%99%BE%E5%BA%A6%E4%BA%91%E6%8F%92%E4%BB%B6-apikey/code/%E7%99%BE%E5%BA%A6%E4%BA%91%E6%8F%92%E4%BB%B6+APIKey.user.js" updateurl="https://greasyfork.org/scripts/496-%E7%99%BE%E5%BA%A6%E4%BA%91%E6%8F%92%E4%BB%B6-apikey/code/%E7%99%BE%E5%BA%A6%E4%BA%91%E6%8F%92%E4%BB%B6+APIKey.user.js">
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>http://pan.baidu.com/disk/*</Include>
+		<Include>https://pan.baidu.com/disk/*</Include>
+		<Include>https://yun.baidu.com/#from=share_yun_logo/</Include>
+		<Include>http://yun.baidu.com/#from=share_yun_logo/</Include>
+		<Require filename="jquery-2.1.1.min.js"/>
+	</Script>
+	<Script basedir="Baidu_Tieba快速浏览帖子" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="模仿googlecode的看帖模式" enabled="false" filename="Baidu_Tieba%E5%BF%AB%E9%80%9F%E6%B5%8F%E8%A7%88%E5%B8%96%E5%AD%90.user.js" installTime="1426572068988" modified="1441673837042" name="Baidu Tieba快速浏览帖子" namespace="http://tieba.baidu.com/f?kw=chrome" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="14467544-ba2d-422a-87cd-797a7e3c5e1b" version="14.04.22" installurl="https://greasyfork.org/scripts/982-baidu-tieba%E5%BF%AB%E9%80%9F%E6%B5%8F%E8%A7%88%E5%B8%96%E5%AD%90/code/Baidu%20Tieba%E5%BF%AB%E9%80%9F%E6%B5%8F%E8%A7%88%E5%B8%96%E5%AD%90.user.js" updateurl="https://greasyfork.org/scripts/982-baidu-tieba%E5%BF%AB%E9%80%9F%E6%B5%8F%E8%A7%88%E5%B8%96%E5%AD%90/code/Baidu%20Tieba%E5%BF%AB%E9%80%9F%E6%B5%8F%E8%A7%88%E5%B8%96%E5%AD%90.user.js">
+		<Grant>GM_addStyle</Grant>
+		<Include>http://tieba.baidu.com/f*kw=*</Include>
+		<Include>http://tieba.baidu.com/p/*</Include>
+	</Script>
+	<Script author="Shyangs" basedir="tieba_hide_someone_plus" checkRemoteUpdates="1" dependhash="5c0f0ead3813de9ddd574ebbe20f41af32c77ed0" description="百度貼吧黑名單。 移除討厭鬼的帖子。" enabled="false" filename="tieba_hide_someone_plus.user.js" installTime="1426572069050" modified="1441673838848" name="tieba_hide_someone_plus" namespace="http://wiki.moztw.org/%E4%BD%BF%E7%94%A8%E8%80%85:Shyangs#tieba_hide_someone_plus" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="c0f0cce9-0ce4-4d32-ba9b-0928ebbc6461" version="0.7.0" installurl="https://greasyfork.org/scripts/222-tieba-hide-someone-plus/code/tieba_hide_someone_plus.user.js" updateurl="https://greasyfork.org/scripts/222-tieba-hide-someone-plus/code/tieba_hide_someone_plus.user.js" icon="4daf736879616e6773fc03">
+		<Exclude>http://tieba.baidu.com/tb*</Exclude>
+		<Exclude>http://tieba.baidu.com/f/search/*</Exclude>
+		<Exclude>http://jump.bdimg.com/tb*</Exclude>
+		<Exclude>http://jump.bdimg.com/f/search/*</Exclude>
+		<Grant>unsafeWindow</Grant>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_addStyle</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Include>http://tieba.baidu.com/*</Include>
+		<Include>http://jump.bdimg.com/*</Include>
+		<Require filename="jquery.js"/>
+	</Script>
+	<Script author="greasepig" basedir="下载一键通" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="利用搜狗浏览器“下载一键通”功能的API，自动帮您找到页面中资源的最佳下载地址，让下载更简单！" enabled="false" filename="%25E4%25B8%258B%25E8%25BD%25BD%25E4%25B8%2580%25E9%2594%25AE%25E9%2580%259A.user.js" installTime="1448074169231" modified="1459404765911" name="下载一键通" namespace="https://greasyfork.org/users/2620-greasepig" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="f3a266c0-680b-4509-a388-54bc70680f5a" version="1.0.2" installurl="file:///D:/GreenSoft/Firefox/Profiles/gm_scripts/%E4%B8%8B%E8%BD%BD%E4%B8%80%E9%94%AE%E9%80%9A/%25E4%25B8%258B%25E8%25BD%25BD%25E4%25B8%2580%25E9%2594%25AE%25E9%2580%259A.user.js" updateurl="file:///D:/GreenSoft/Firefox/Profiles/gm_scripts/%E4%B8%8B%E8%BD%BD%E4%B8%80%E9%94%AE%E9%80%9A/%25E4%25B8%258B%25E8%25BD%25BD%25E4%25B8%2580%25E9%2594%25AE%25E9%2580%259A.user.js">
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>http://*</Include>
+	</Script>
+	<Script author="Gerald &lt;gera2ld@163.com&gt;" basedir="Tieba_Advanced" checkRemoteUpdates="1" dependhash="9f9291f223240e66cac352e59aabe21523ff694b" description="贴吧增强 - Gerald倾情打造" enabled="false" filename="Tieba_Advanced.user.js" installTime="1426572069667" modified="1441673838723" name="Tieba Advanced" namespace="http://gera2ld.blog.163.com/" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="b12b9d73-dedd-4059-b92b-500a2f38641c" version="2.7.7.1" installurl="https://greasyfork.org/scripts/117-tieba-advanced/code/Tieba%20Advanced.user.js" homepageurl="http://geraldl.net/userjs/TiebaAdvanced" updateurl="https://greasyfork.org/scripts/117-tieba-advanced/code/Tieba%20Advanced.user.js" icon="a56031a1gw1emwlbe1c8gj2097097wfa.jpg">
+		<Exclude>http://tieba.baidu.com/tb/*</Exclude>
+		<Grant>none</Grant>
+		<Include>http://tieba.baidu.com/*</Include>
+		<Require filename="code.user.js"/>
+	</Script>
+	<Script author="864907600cc" basedir="Tieba_Preload" checkRemoteUpdates="1" dependhash="80a02ceeb90696836e45318accf7f4d9deb54524" description="贴吧预加载，自动加载下一页内容，同时附带消灭贴吧自带 Lazy Load 功能" enabled="false" filename="Tieba_Preload.user.js" installTime="1435914492785" modified="1435914492785" name="Tieba Preload" namespace="http://ext.ccloli.com" noframes="true" runAt="document-end" updateMetaStatus="fail" uuid="ca852a28-ea0d-4023-bf02-fb98c91bb83c" version="1.3.11" installurl="https://greasyfork.org/scripts/282-tieba-preload/code/Tieba%20Preload.user.js" updateurl="https://greasyfork.org/scripts/282-tieba-preload/code/Tieba%20Preload.user.js" icon="147834caf9ccb0a66b2505c753747867">
+		<Exclude>http://tieba.baidu.com/*tp=1*</Exclude>
+		<Exclude>http://tieba.baidu.com/*tab=*</Exclude>
+		<Exclude>http://tieba.baidu.com/photo/*</Exclude>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Include>http://tieba.baidu.com/*</Include>
+		<Match>http://tieba.baidu.com/*</Match>
+	</Script>
+	<Script author="Gerald &lt;gera2ld@163.com&gt;" basedir="Tieba_Imagizer" checkRemoteUpdates="1" dependhash="29055a60407504c94c7dfdf2005e5f35ef4c2f77" description="贴吧图化 - Gerald倾情打造" enabled="false" filename="Tieba_Imagizer.user.js" installTime="1426572068823" modified="1441673838879" name="Tieba Imagizer" namespace="http://gera2ld.blog.163.com/" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="2ef126ba-5714-483c-a100-7343640491c3" version="1.2.7.1" installurl="https://greasyfork.org/scripts/120-tieba-imagizer/code/Tieba%20Imagizer.user.js" homepageurl="http://geraldl.net/userjs/TiebaImagizer" updateurl="https://greasyfork.org/scripts/120-tieba-imagizer/code/Tieba%20Imagizer.user.js" icon="a0ad718d86d21262ccd6ff271ece08a3">
+		<Exclude>http://tieba.baidu.com/tb/*</Exclude>
+		<Grant>none</Grant>
+		<Include>http://tieba.baidu.com/*</Include>
+		<Require filename="code.user.js"/>
+	</Script>
+	<Script basedir="poco_pic" checkRemoteUpdates="1" dependhash="bbd6149f0aa220b34a359497ad92ca13996d908f" description="" enabled="true" filename="poco_pic.user.js" installTime="1427436223957" modified="1459414082489" name="poco auto jump" namespace="poco-pic" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="1600e859-7523-4cb9-92d5-517d62be1920" version="1.1" installurl="file:///D:/GreenSoft/Firefox35/Profiles/gm_scripts/poco_pic/poco_pic.user.js" updateurl="file:///D:/GreenSoft/Firefox35/Profiles/gm_scripts/poco_pic/poco_pic.user.js" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACEUlEQVQ4jZ2Q30tTUQDHz3+h9VdMw4dhmNyS7MEULEqi6CV6yEeJcSPfwqIepIgewrJ0QUFPvXiJCnqwH0q6NTHNLdG2obtud/dcnds5l08P0+XmJOjhA9+H8/2cc75CCCECYw3s0jxen8DzQwRuhOh6epqW8UZawo0IIYRoCTfyZPX8P+kOn8UwLQzTojfcQWg2SGCsgX2CuwsnGYy1cWrkHIZpcezOTVqHBirlN9F0Je8T3FvsZDDWRv90Ez0vLlcOvl7IkMgX2CiUWFqXRJMO45FUtWBvORQJ0vuymwsjX/jlbOEUFW5JI1UZt6SZStjVgt1y/3QT12eOYpgWU2uSbFGRVxqpfLwdpPKJ2159QSgS5MyrHgzTYj67TXpbk1M+P1eTrEsPqX1iS3GyJV0tCEWCXPvaTNdoebzHn5K8i64xl5bklI8Qgunod1xdzvFUukYwG+TEgysYpsXbpMvyliKrfPK6jBCCb7Eocif/tms2uDTRjmFaTKYlqYLCLmkc5ZNXPq72kTW42q8WHB++ysOZFCubJTLF8r93y3sFTtbD2VbIWkHH/UEmVnKkC4qNkq5bltrH7huu5CpB+63bfEh6zGc8csrHrfN0u2+4Qm6r+FfQ+egihmnxPuHwI+PhHHB73Q2OPDuMYVp8zhb4uGgztyaJ25skNjYPLLraZ2xyuSwQQojWoQH+ByGE+APy/e1tpGm3xwAAAABJRU5ErkJggg==">
+		<Grant>none</Grant>
+		<Include>http://photo.poco.cn/like/detail*</Include>
+		<Require filename="jquery.min.js"/>
+		<Description lang="zh-CN">poco auto jump to gallery</Description>
+	</Script>
+	<Script basedir="按需载图" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="阻止图片加载，直到你把鼠标移到图片位置。还你一个清爽自由的页面！简洁主义者的福音，注意力涣散者的良药。" enabled="false" filename="%E6%8C%89%E9%9C%80%E8%BD%BD%E5%9B%BE.user.js" installTime="1455427061996" modified="1455427061996" name="按需载图" namespace="qinweizhao@163.com" noframes="false" runAt="document-start" updateMetaStatus="fail" uuid="00b9b2f5-d4c4-4f15-9513-5d78430249f9" version="4.6.4" installurl="https://greasyfork.org/scripts/9416-%E6%8C%89%E9%9C%80%E8%BD%BD%E5%9B%BE/code/%E6%8C%89%E9%9C%80%E8%BD%BD%E5%9B%BE.user.js" updateurl="https://greasyfork.org/scripts/9416-%E6%8C%89%E9%9C%80%E8%BD%BD%E5%9B%BE/code/%E6%8C%89%E9%9C%80%E8%BD%BD%E5%9B%BE.user.js">
+		<Exclude>*www.dongting.com*</Exclude>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_addStyle</Grant>
+		<Include>*</Include>
+		<Name lang="zh-CN">按需载图</Name>
+		<Description lang="zh-CN">阻止图片加载，直到你把鼠标移到图片位置。还你一个清爽自由的页面！简洁主义者的福音，注意力涣散者的良药。</Description>
+		<Name lang="en">Load images when you want</Name>
+		<Description lang="en">Block the images in the sites and load them automatically when your mouse is over them.</Description>
+	</Script>
+	<Script author="酷企鹅Link" basedir="getzhidaofile" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="获取百度知道附件下载地址" enabled="false" filename="getzhidaofile.user.js" installTime="1435914314148" modified="1435914314148" name="getzhidaofile" namespace="http://userscripts.org/scripts/show/176807" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="0a7331ce-b3e7-4f8c-9a5d-8aa1590f4776" version="1.0.20.11" installurl="https://greasyfork.org/scripts/7689-getzhidaofile/code/getzhidaofile.user.js" updateurl="https://greasyfork.org/scripts/7689-getzhidaofile/code/getzhidaofile.user.js">
+		<Grant>none</Grant>
+		<Include>http://zhidao.baidu.com/question/*</Include>
+		<Include>http://zhidao.baidu.com/link?url=*</Include>
+	</Script>
+	<Script basedir="Zhihu_Visitor" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="知乎免登录查看回答全文" enabled="false" filename="Zhihu_Visitor.user.js" installTime="1455427056339" modified="1455427056339" name="Zhihu Visitor" namespace="https://github.com/tiansh" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="1418fef4-c7eb-4e14-a71b-dec011ad0530" version="3.3" installurl="https://greasyfork.org/scripts/6489-zhihu-visitor/code/Zhihu%20Visitor.user.js" homepageurl="https://tiansh.github.io/us-else/zhihu_visitor/" updateurl="https://greasyfork.org/scripts/6489-zhihu-visitor/code/Zhihu%20Visitor.user.js">
+		<Grant>GM_addStyle</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>*://www.zhihu.com/*</Include>
+		<Name lang="en">Zhihu Visitor</Name>
+		<Description lang="en">View zhihu.com answers without sign in</Description>
+		<Name lang="zh">知乎免登录</Name>
+		<Description lang="zh">知乎免登录查看回答全文并显示更多回答</Description>
+		<Name lang="zh-CN">知乎免登录</Name>
+		<Description lang="zh-CN">知乎免登录查看回答全文并显示更多回答</Description>
+	</Script>
+	<Script author="googleGuard" basedir="BiliBili_AutoWide" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="false" filename="BiliBili_AutoWide_1.2.user.js" installTime="1432872987332" modified="1441673837073" name="BiliBili AutoWide" namespace="" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="198f587f-340e-45d5-b9c3-03acadab7137" version="1.2" installurl="file:///E:/Media/BiliBili_AutoWide_1.2.user.js" updateurl="file:///E:/Media/BiliBili_AutoWide_1.2.user.js">
+		<Grant>none</Grant>
+		<Include>http://www.bilibili.com/video/av*</Include>
+		<Include>https://secure.bilibili.com/secure,*</Include>
+	</Script>
+	<Script author="burningall" basedir="Sort_Search_Engine_Result" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="给百度\谷歌\必应搜索结果加上序号" enabled="false" filename="Sort_Search_Engine_Result.user.js" installTime="1433317912562" modified="1441673838551" name="Sort Search Engine Result" namespace="https://greasyfork.org/zh-CN/users/3400-axetroy" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="78c59b93-5fef-4394-bd36-a23bce7b0b48" version="2015.6.2.7" installurl="https://greasyfork.org/scripts/10121-sort-search-engine-result/code/Sort%20Search%20Engine%20Result.user.js" updateurl="https://greasyfork.org/scripts/10121-sort-search-engine-result/code/Sort%20Search%20Engine%20Result.user.js">
+		<Grant>none</Grant>
+		<Include>*www.baidu.com*</Include>
+		<Include>*news.baidu.com*</Include>
+		<Include>*zhidao.baidu.com*</Include>
+		<Include>*wenku.baidu.com*</Include>
+		<Include>*v.baidu.com*</Include>
+		<Include>*tieba.baidu.com/f/search/*</Include>
+		<Include>*image.baidu.com*</Include>
+		<Include>*cn.bing.com*</Include>
+		<Include>*www.sogou.com*</Include>
+		<Include>*www.haosou.com*</Include>
+		<Include>*www.youdao.com*</Include>
+		<Include>*www.dongting.com*</Include>
+	</Script>
+	<Script author="Jeppe Rune Mortensen &lt;jepperm@gmail.com&gt;" basedir="YouTube_Center_Developer_Build" checkRemoteUpdates="1" dependhash="af6f73b24294db56ac60d5c7ef05e52537e0aef9" description="YouTube Center Developer Build contains all kind of different useful functions which makes your visit on YouTube much more entertaining." enabled="false" filename="YouTubeCenter.user.js" installTime="1458293386394" modified="1458293386394" name="YouTube Center Developer Build" namespace="http://www.facebook.com/YouTubeCenter" noframes="false" runAt="document-start" updateMetaStatus="ok" uuid="9b3c7656-4c98-4992-aecd-2059fb59b9bd" version="537" installurl="https://github.com/YePpHa/YouTubeCenter/raw/master/dist/YouTubeCenter.user.js" homepageurl="https://github.com/YePpHa/YouTubeCenter/wiki" updateurl="https://github.com/YePpHa/YouTubeCenter/raw/master/dist/YouTubeCenter.meta.js" icon="icon48.png">
+		<Exclude>http://apiblog.youtube.com/*</Exclude>
+		<Exclude>https://apiblog.youtube.com/*</Exclude>
+		<Exclude>http://*.youtube.com/subscribe_embed?*</Exclude>
+		<Exclude>https://*.youtube.com/subscribe_embed?*</Exclude>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_log</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Grant>unsafeWindow</Grant>
+		<Include>http://www.youtube.com/*</Include>
+		<Include>https://www.youtube.com/*</Include>
+		<Include>http://youtube.com/*</Include>
+		<Include>https://youtube.com/*</Include>
+		<Include>http://apis.google.com/*/widget/render/comments?*</Include>
+		<Include>https://apis.google.com/*/widget/render/comments?*</Include>
+		<Include>http://plus.googleapis.com/*/widget/render/comments?*</Include>
+		<Include>https://plus.googleapis.com/*/widget/render/comments?*</Include>
+		<Match>http://www.youtube.com/*</Match>
+		<Match>https://www.youtube.com/*</Match>
+		<Match>http://youtube.com/*</Match>
+		<Match>https://youtube.com/*</Match>
+		<Match>https://yeppha.github.io/downloads/YouTubeCenter.meta.js</Match>
+		<Match>http://s.ytimg.com/yts/jsbin/*</Match>
+		<Match>https://s.ytimg.com/yts/jsbin/*</Match>
+		<Match>https://raw.github.com/YePpHa/YouTubeCenter/master/*</Match>
+		<Match>https://raw.githubusercontent.com/YePpHa/YouTubeCenter/master/*</Match>
+		<Match>http://raw.github.com/YePpHa/YouTubeCenter/master/*</Match>
+		<Match>http://raw.githubusercontent.com/YePpHa/YouTubeCenter/master/*</Match>
+		<Match>http://apis.google.com/*/widget/render/comments?*</Match>
+		<Match>https://apis.google.com/*/widget/render/comments?*</Match>
+		<Match>http://plus.googleapis.com/*/widget/render/comments?*</Match>
+		<Match>https://plus.googleapis.com/*/widget/render/comments?*</Match>
+	</Script>
+	<Script author="ywzhaiqi@gmail.com" basedir="Readability_中文增强版" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="基于readability 1.7.1，改进中文阅读。" enabled="false" filename="readability%40ywzhaiqi%40gmailcom.user.js" installTime="1433559632530" modified="1441673838177" name="Readability 中文增强版" namespace="userscripts.org" noframes="false" runAt="document-start" updateMetaStatus="ok" uuid="37abf82f-cbf5-4939-ab1e-5d95c3ebc4b0" version="1.3" installurl="https://userscripts.org/scripts/source/163581.user.js" updateurl="https://userscripts.org/scripts/source/163581.meta.js">
+		<Grant>none</Grant>
+		<Include>*</Include>
+	</Script>
+	<Script basedir="YouTube_+" checkRemoteUpdates="1" dependhash="f9b70de836d91e6bfc7ea113c76ff06613b48cbf" description="YouTube with more freedom" enabled="true" filename="YouTube_+.user.js" installTime="1459605612107" modified="1459605612107" name="YouTube +" namespace="https://github.com/ParticleCore" noframes="true" runAt="document-start" updateMetaStatus="ok" uuid="2d5ce14d-1904-481d-b346-b0ca7452854a" version="1.2.0" installurl="https://greasyfork.org/scripts/9932-youtube/code/YouTube%20+.user.js" homepageurl="https://github.com/ParticleCore/Particle" updateurl="https://greasyfork.org/scripts/9932-youtube/code/YouTube%20+.user.js" icon="YT%2Bicon.png">
+		<Exclude>*://www.youtube.com/embed/*</Exclude>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Match>*://www.youtube.com/*</Match>
+	</Script>
+	<Script author="Jefferson &quot;jscher2000&quot; Scher" basedir="Google_Hit_Hider_by_Domain_(Search_Filter_Block_Sites)" checkRemoteUpdates="1" dependhash="9d35f9617a4d71c9615e4925bca3371e9cae91be" description="Block unwanted sites from your Google, DuckDuckGo and Startpage.com search results. For Firefox+Greasemonkey or Chrome+Tampermonkey. v1.6.9 2015-09-13" enabled="false" filename="Google_Hit_Hider_by_Domain_(Search_Filter_Block_Sites).user.js" installTime="1443932823568" modified="1443932823568" name="Google Hit Hider by Domain (Search Filter / Block Sites)" namespace="JeffersonScher" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="72bb515a-4ae7-4328-a605-3bf52caa95f7" version="1.6.9" installurl="https://greasyfork.org/scripts/1682-google-hit-hider-by-domain-search-filter-block-sites/code/Google%20Hit%20Hider%20by%20Domain%20(Search%20Filter%20%20Block%20Sites).user.js" updateurl="https://greasyfork.org/scripts/1682-google-hit-hider-by-domain-search-filter-block-sites/code/Google%20Hit%20Hider%20by%20Domain%20(Search%20Filter%20%20Block%20Sites).user.js">
+		<Grant>GM_addStyle</Grant>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Grant>GM_deleteValue</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>http*://www.google.*/*</Include>
+		<Include>http*://news.google.*/*</Include>
+		<Include>http*://images.google.*/*</Include>
+		<Include>http*://video.google.*/*</Include>
+		<Include>http*://encrypted.google.*/*</Include>
+		<Include>http*://startpage.com/*</Include>
+		<Include>http*://*.startpage.com/*</Include>
+		<Include>http*://duckduckgo.com/*</Include>
+		<Resource name="mycon" filename="gfrk-GHHbD-ver169.png" mimetype="image/png"/>
+	</Script>
+	<Script basedir="Disable_Google_Translate" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Removes that fucking annoying Google Translate bar!" enabled="false" filename="Disable_Google_Translate.user.js" installTime="1435893569397" modified="1441673837319" name="Disable Google Translate" namespace="https://greasyfork.org/users/363" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="efdc9854-5feb-4c0d-b6e5-00a229f2e986" version="0.3" installurl="https://greasyfork.org/scripts/8544-disable-google-translate/code/Disable%20Google%20Translate.user.js" updateurl="https://greasyfork.org/scripts/8544-disable-google-translate/code/Disable%20Google%20Translate.user.js">
+		<Grant>none</Grant>
+		<Include>*</Include>
+	</Script>
+	<Script author="田生 http://weibo.com/tsh90" basedir="Yet_Another_Weibo_Filter" checkRemoteUpdates="1" dependhash="2a7794708c645568335ef0aa58e9d8aa43ace571" description="新浪微博根据关键词、作者、话题、来源等过滤微博；修改版面。 新浪微博根據關鍵字、作者、話題、來源等篩選微博；修改版面。 filter Sina Weibo by keywords, authors, topics, sources, etc.; modify layout" enabled="true" filename="Yet_Another_Weibo_Filter.user.js" installTime="1459605560826" modified="1459605560826" name="Yet Another Weibo Filter" namespace="https://github.com/tiansh" noframes="false" runAt="document-start" updateMetaStatus="ok" uuid="db106629-75b3-4655-b756-e54c3a96f022" version="3.7.372" installurl="https://tiansh.github.io/yawf/Yet_Another_Weibo_Filter.user.js" homepageurl="https://tiansh.github.io/yawf/" updateurl="https://tiansh.github.io/yawf/Yet_Another_Weibo_Filter.meta.js" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABdUExURUxpcemNSemNSemNSemNSemNSemNSemNSemNSemNSdktOumNSemNSemNSemNSemNSemNSdktOtktOtktOtktOtktOtktOtktOtktOtktOtktOtktOtktOumNSdktOsZoAhUAAAAddFJOUwAgkIAQ4MBAYPBA0KAwcLBQ0BBgIHDggDCw8JDAT2c6pQAAAiFJREFUWMPNl9lywyAMRcMOMQa7SdMV//9nNk4nqRcJhOvOVI9+OJbE5UocDn8VrBNRp3so7YWRGzBWJSAa3lZyfMLCVbF4ykVjye1JhVB2j4S+UR0FpBMhNCuDEilcKIIcjZSi3KO0W6cKUghUUHL5nktHJqW8EGz6fyTmr7dW82DGK8+MEb7ZSALYNiIkU20uMoDu4tq9jKrZYnlSACS/zYSBvnfb/HztM05uI611FjfOmNb9XgMIqSk01phgDTTR2gqBm/j4rfJdqU+K2lHHWf7ssJTM+ozFvMSG1iVV9FbmKAfXEjxDUC6KQTyDZ7KWNaAZyRLabUiOqAj3BB8lLZoSWJvA56LEUuoqty2BqZLDShJodQzZpdCba8ytH53HrXUu77K9RqyrvNaV5ptFQGRy/X78CQKpQday6zEM0+jfXl5XpAjXNmuSXoDGuHycM9tOB/Mh0DVecCcTiHBh0NA/Yfu3Rk4BAS1ICgIZEmjokS3V1YKGZ+QeV4MuTzuBpin5X4F6sEdNPWh41CbB4+/IoCP0b14nSBwUYB9R1aAWfgJpEoiBq4dbWCcBNPm5QEa7IJ3az9YwWazD0mpRzvt64Zsu6HE5XlDQ2/wREbW36EAeW0e5IsWXdMyBzhWgkAH1NU9ydqD5UWlDuKlrY2UzudsMqC+OYL5wBAT0eSql9ChOyxxoTOpUqm4Upb6ra8jE5bXiuTNk47QXiE76AnacIlJf1W5ZAAAAAElFTkSuQmCC">
+		<Exclude>http://weibo.com/a/bind/*</Exclude>
+		<Exclude>http://weibo.com/nguide/*</Exclude>
+		<Exclude>http://weibo.com/</Exclude>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_deleteValue</Grant>
+		<Grant>GM_addStyle</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Grant>GM_info</Grant>
+		<Grant>unsafeWindow</Grant>
+		<Include>http://www.weibo.com/*</Include>
+		<Include>http://weibo.com/*</Include>
+		<Include>http://d.weibo.com/*</Include>
+		<Include>http://s.weibo.com/*</Include>
+		<Name lang="zh-CN">Yet Another Weibo Filter 看真正想看的微博</Name>
+		<Description lang="zh-CN">新浪微博根据关键词、作者、话题、来源等过滤微博；修改版面。</Description>
+		<Name lang="zh-HK">Yet Another Weibo Filter 看真正想看的微博</Name>
+		<Description lang="zh-HK">新浪微博根據關鍵字、作者、話題、來源等篩選微博；修改版面。</Description>
+		<Name lang="zh-TW">Yet Another Weibo Filter 看真正想看的微博</Name>
+		<Description lang="zh-TW">新浪微博根據關鍵字、作者、話題、來源等篩選微博；修改版面。</Description>
+		<Name lang="en">Yet Another Weibo Filter</Name>
+		<Description lang="en">filter Sina Weibo by keywords, authors, topics, sources, etc.; modify layout</Description>
+	</Script>
+	<Script author="wazangg" basedir="自定义右键强力解锁" checkRemoteUpdates="1" dependhash="9a53a4312521c0c2000e1447aed9760b7147e128" description="Strong lift right mouse button to copy unlocking" enabled="false" filename="%25E8%2587%25AA%25E5%25AE%259A%25E4%25B9%2589%25E5%258F%25B3%25E9%2594%25AE%25E8%25A7%25A3%25E9%2594.user.js" installTime="1436127187434" modified="1436127187434" name="自定义右键强力解锁" namespace="wazangg@gmail.com" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="8b120a7a-f815-4e05-9e01-46d082444181" version="0.0.2" installurl="https://userscripts.org/scripts/source/188199.user.js" updateurl="https://userscripts.org/scripts/source/188199.meta.js">
+		<Grant>unsafeWindow</Grant>
+		<Include>http://*.zongheng.com/*</Include>
+		<Include>http://*.qidian.com/*</Include>
+		<Include>http://*.xxsy.net/books/*</Include>
+		<Include>http://novel.hongxiu.com/*</Include>
+		<Include>http://*.17k.com/chapter/*</Include>
+		<Include>http://*.qdmm.com/*</Include>
+		<Include>http://chuangshi.qq.com/*</Include>
+		<Include>http://*.hongshu.com/*</Include>
+		<Include>http://*.qwsy.com/*</Include>
+		<Include>http://*.readnovel.com/*</Include>
+		<Include>http://*.xhyd.com/*</Include>
+		<Include>http://book.hjsm.tom.com/*</Include>
+		<Include>http://dl.dbank.com/*</Include>
+		<Include>http://*.fmx.cn/*</Include>
+		<Include>http://*.xdyqw.com/*</Include>
+		<Include>http://*.huanwenkk.com/*</Include>
+		<Include>http://*.tadu.com/*</Include>
+		<Include>http://*.3gsc.com.cn/*</Include>
+		<Include>http://*.huanxia.com/*</Include>
+		<Include>http://*.book.sina.com.cn/*</Include>
+		<Include>http://yuedu.163.com/book_reader/*</Include>
+		<Include>http://dushu.qq.com/*</Include>
+		<Include>http://read.zwskw.com/modules/*</Include>
+		<Include>http://*.86zw.org/*</Include>
+		<Include>http://*.txtbbs.com/*</Include>
+		<Include>http://*.faloo.com/*</Include>
+		<Include>http://*.shenmaxiaoshuo.com/*</Include>
+		<Include>http://*.ltggg.com/*</Include>
+		<Include>http://*.wcxiaoshuo.com/*</Include>
+		<Include>http://*.shushuw.cn/*</Include>
+		<Include>http://book.aavideo.net/read.php?id=*</Include>
+		<Include>http://www.guancha.cn/*.shtml</Include>
+		<Include>http://www.buzzhand.com/*</Include>
+		<Require filename="jquery.min.js"/>
+	</Script>
+	<Script author="Jason Shaw" basedir="百度网盘批量重命名" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="批量重命名百度网盘中的文件，支持正则和选中重命名" enabled="false" filename="BDyun%E6%89%B9%E9%87%8F%E9%87%8D%E5%91%BD%E5%90%8D.user.js" installTime="1436419734665" modified="1436419734665" name="百度网盘批量重命名" namespace="yunbatch@jasonshaw" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="ae10b096-cebf-4764-ac46-9c1912e17141" version="1.0.0" installurl="file:///C:/Users/desk/AppData/Local/Temp/360zip$Temp/360$0/BDyun%E6%89%B9%E9%87%8F%E9%87%8D%E5%91%BD%E5%90%8D.user.js" updateurl="file:///C:/Users/desk/AppData/Local/Temp/360zip$Temp/360$0/BDyun%E6%89%B9%E9%87%8F%E9%87%8D%E5%91%BD%E5%90%8D.user.js">
+		<Grant>none</Grant>
+		<Include>http://pan.baidu.com/*</Include>
+		<Include>http://yun.baidu.com/*</Include>
+	</Script>
+	<Script author="anonymity" basedir="sort_by_time" checkRemoteUpdates="1" dependhash="dc1c10a378fefef5c617fc2eb1fce01ecd056208" description="wndflb Auto Sort by time" enabled="false" filename="sort_by_time.user.js" installTime="1439437051477" modified="1439437062450" name="sort_by_time" namespace="http://www.52pojie.cn/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="8be84c01-194d-4301-8a75-e2bcf46dcaf0" version="0.2" installurl="file:///D:/GreenSoft/Firefox/Profiles/gm_scripts/sort_by_time/sort_by_time.user.js" updateurl="file:///D:/GreenSoft/Firefox/Profiles/gm_scripts/sort_by_time/sort_by_time.user.js">
+		<Grant>none</Grant>
+		<Include>*/forum.php?*</Include>
+		<Include>*/forum-*</Include>
+		<Require filename="jquery-1.9.0.min.js"/>
+	</Script>
+	<Script basedir="Direct_Google" checkRemoteUpdates="1" dependhash="1327e6efbbfbab7cec5ff953de39ef6c41d3842b" description="Removes Google redirects and exposes &quot;Cached&quot; links." enabled="true" filename="Direct_Google.user.js" installTime="1442289784463" modified="1442289784463" name="Direct Google" namespace="http://userscripts.org/users/92143" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="914d0971-54bf-4542-a724-a11394d28047" version="1.5" installurl="https://greasyfork.org/scripts/568-direct-google/code/Direct%20Google.user.js" updateurl="https://greasyfork.org/scripts/568-direct-google/code/Direct%20Google.user.js">
+		<Grant>GM_addStyle</Grant>
+		<Include>/^https?\:\/\/(www|news|maps|docs|cse|encrypted)\.google\./</Include>
+		<Require filename="jquery.min.js"/>
+	</Script>
+	<Script basedir="Direct_Google_Images" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Provides direct links in Google Images." enabled="true" filename="Direct_Google_Images.user.js" installTime="1442291561152" modified="1442291561152" name="Direct Google Images" namespace="http://greasyfork.org/en/users/461" noframes="true" runAt="document-start" updateMetaStatus="ok" uuid="315857be-8df7-4107-a291-9feeade20fa5" version="0.7" installurl="https://greasyfork.org/scripts/6674-direct-google-images/code/Direct%20Google%20Images.user.js" updateurl="https://greasyfork.org/scripts/6674-direct-google-images/code/Direct%20Google%20Images.user.js">
+		<Grant>GM_addStyle</Grant>
+		<Include>/^https?\:\/\/(www|encrypted)\.google\./</Include>
+	</Script>
+	<Script basedir="wingsmix_a_blank" checkRemoteUpdates="1" dependhash="6d9d9bdf848f2decae22812be2ff392085407214" description="链接强制新标签页打开" enabled="true" filename="lesmao.user.js" installTime="1448000055526" modified="1461035912314" name="wingsmix a_blank" namespace="a-blank-pic" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="53466fcd-94d6-4e5d-9f52-49f57ea97455" version="1" installurl="file:///D:/GreenSoft/Firefox/Profiles/gm_scripts/lesmao/lesmao.user.js" updateurl="file:///D:/GreenSoft/Firefox/Profiles/gm_scripts/lesmao/lesmao.user.js">
+		<Grant>none</Grant>
+		<Include>http://www.lesmao.com/*</Include>
+		<Include>http://www.99e.cc/*</Include>
+		<Include>http://www.lsm.me/*</Include>
+		<Include>http://userstyles.org/*</Include>
+		<Include>http://www.aisinei.com/*</Include>
+		<Include>http://hrtsea.com/*</Include>
+		<Include>http://www.lsmo.cc/*</Include>
+		<Require filename="jquery.min.js"/>
+	</Script>
+	<Script basedir="小說閱讀腳本" checkRemoteUpdates="1" dependhash="5542faea576e18e31efecf829ca8f93d4fdbeceb" description="小說閱讀腳本，統一閱讀樣式，內容去廣告、修正拼音字、段落整理，自動下一頁" enabled="false" filename="My_Novel_Reader.user.js" installTime="1443748997780" modified="1443748997780" name="小說閱讀腳本" namespace="https://github.com/ywzhaiqi" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="5efae26b-58ef-4e35-9fe0-0b3ed2f4b483" version="5.2.3" installurl="https://greasyfork.org/scripts/292-my-novel-reader/code/My%20Novel%20Reader.user.js" updateurl="https://greasyfork.org/scripts/292-my-novel-reader/code/My%20Novel%20Reader.user.js">
+		<Exclude>*/List.htm</Exclude>
+		<Exclude>*/List.html</Exclude>
+		<Exclude>*/List.shtml</Exclude>
+		<Exclude>*/index.htm</Exclude>
+		<Exclude>*/index.html</Exclude>
+		<Exclude>*/index.shtml</Exclude>
+		<Exclude>*/Default.htm</Exclude>
+		<Exclude>*/Default.html</Exclude>
+		<Exclude>*/Default.shtml</Exclude>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_addStyle</Grant>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_getResourceURL</Grant>
+		<Grant>GM_openInTab</Grant>
+		<Grant>GM_setClipboard</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Grant>unsafeWindow</Grant>
+		<Include>http://read.qidian.com/*,*.aspx</Include>
+		<Include>http://readbook.qidian.com/bookreader/*,*.html</Include>
+		<Include>http://read.qidian.com/BookReaderOld/*,*.aspx</Include>
+		<Include>http://read.qidian.com/BookReader/*,*.aspx</Include>
+		<Include>http://wwwploy.qidian.com/BookReader/*,*.aspx</Include>
+		<Include>http://free.qidian.com/Free/ReadChapter.aspx?*</Include>
+		<Include>http://www.qdmm.com/BookReader/*,*.aspx</Include>
+		<Include>http://www.qdwenxue.com/BookReader/*,*.aspx</Include>
+		<Include>http://chuangshi.qq.com/read/bookreader/*.html*</Include>
+		<Include>http://chuangshi.qq.com/*bk/*/*-r-*.html*</Include>
+		<Include>http://yunqi.qq.com/*bk/*/*.html</Include>
+		<Include>http://dushu.qq.com/read.html?bid=*</Include>
+		<Include>http://www.jjwxc.net/onebook.php?novelid=*</Include>
+		<Include>http://book.zongheng.com/chapter/*/*.html</Include>
+		<Include>http://www.xxsy.net/books/*/*.html</Include>
+		<Include>http://book.zhulang.com/*/*.html</Include>
+		<Include>http://www.17k.com/chapter/*/*.html</Include>
+		<Include>http://mm.17k.com/chapter/*/*.html</Include>
+		<Include>http://www.kanxia.net/k/*/*/*.html</Include>
+		<Include>http://www.qingdi.com/files/article/html/*/*/*.html</Include>
+		<Include>http://www.xkzw.org/*/*.html</Include>
+		<Include>http://shouda8.com/*/*.html</Include>
+		<Include>http://novel.hongxiu.com/*/*/*.shtml</Include>
+		<Include>http://www.readnovel.com/novel/*.html</Include>
+		<Include>http://tieba.baidu.com/p/*</Include>
+		<Include>http://booklink.me/*</Include>
+		<Include>http://www.shumilou.com/*/*.html</Include>
+		<Include>http://www.wcxiaoshuo.com/wcxs-*-*/</Include>
+		<Include>http://www.xiaoshuoz.com/wcxs-*-*/</Include>
+		<Include>http://www.quledu.com/wcxs-*-*/</Include>
+		<Include>http://www.ranwen.cc/*/*/*/*.html</Include>
+		<Include>http://www.ranwen.net/files/article/*/*/*.html</Include>
+		<Include>http://www.64mi.com/*/*/*/*.html</Include>
+		<Include>http://www.bxs.cc/*/*.html*</Include>
+		<Include>http://www.laishuwu.com/html/*/*/*.html</Include>
+		<Include>http://www.binhuo.com/html/*/*/*.html</Include>
+		<Include>http://www.haoqi99.com/haoqi99/*/*/*.shtml</Include>
+		<Include>http://www.shuhe.cc/*/*/</Include>
+		<Include>http://www.dudukan.net/html/*/*/*.html</Include>
+		<Include>http://www.hahawx.com/*/*/*.htm</Include>
+		<Include>http://www.zhuzhudao.com/txt/*/*/</Include>
+		<Include>http://www.zhuzhudao.cc/txt/*/*/</Include>
+		<Include>http://www.dahaomen.net/txt/*/*/</Include>
+		<Include>http://www.tadu.com/book/*/*/</Include>
+		<Include>http://www.aishoucang.com/*/*.html</Include>
+		<Include>http://www.wanshuba.com/Html/*/*/*.html</Include>
+		<Include>http://www.zhuishu.net/files/article/html/*/*/*.html</Include>
+		<Include>http://www.sqsxs.com/*/*/*.html*</Include>
+		<Include>http://www.caiwei.tw/html/*/*.html</Include>
+		<Include>http://www.hotsk.com/Html/Book/*/*/*.shtml</Include>
+		<Include>http://www.92to.com/*/*/*.html</Include>
+		<Include>http://www.qirexs.com/read-*-chapter-*.html</Include>
+		<Include>http://www.du00.com/read/*/*/*.html</Include>
+		<Include>http://www.qishuwu.com/*/*/</Include>
+		<Include>http://www.wandoou.com/book/*/*.html</Include>
+		<Include>http://www.6yzw.org/*/*.html</Include>
+		<Include>http://www.6yzw.com/*/*.html</Include>
+		<Include>http://www.daomengren.com/*/*.html</Include>
+		<Include>http://muyuge.com/*/*.html</Include>
+		<Include>http://www.muyuge.net/*/*.html</Include>
+		<Include>http://bbs.vyming.com/novel-read-*-*.html</Include>
+		<Include>http://www.9imw.com/novel-read-*-*.html</Include>
+		<Include>http://www.23zw.com/olread/*/*/*.html</Include>
+		<Include>http://www.50zw.com/book_*/*.html</Include>
+		<Include>http://www.xiangcunxiaoshuo.com/shu/*/*.html</Include>
+		<Include>http://www.lwxs520.com/books/*/*/*.html</Include>
+		<Include>http://www.zashu.net/books/*/*/*.html</Include>
+		<Include>http://www.piaotian.net/html/*/*/*.html</Include>
+		<Include>http://www.yunlaige.com/html/*/*/*.html</Include>
+		<Include>http://www.cfwx.net/files/article/html/*/*/*.html</Include>
+		<Include>http://www.qiuwu.net/html/*/*/*.html</Include>
+		<Include>http://www.fengwu.org/html/*/*/*.html</Include>
+		<Include>http://www.xs84.com/*_*/*</Include>
+		<Include>http://www.geiliwx.com/GeiLi/*/*/*.shtml*</Include>
+		<Include>http://www.123yq.com/read/*/*/*.shtml</Include>
+		<Include>http://www.dhzw.com/book/*/*/*.html</Include>
+		<Include>http://www.du00.cc/read/*/*/*.html</Include>
+		<Include>http://www.aszw.com/book/*/*/*.html</Include>
+		<Include>http://www.xsbashi.com/*_*/</Include>
+		<Include>http://www.vodtw.com/Html/Book/*/*/*.html</Include>
+		<Include>http://www.fhxs.com/read/*/*/*.shtml</Include>
+		<Include>http://www.snwx.com/book/*/*/*.html</Include>
+		<Include>http://www.jiaodu8.com/*/*/*/*.html</Include>
+		<Include>http://www.fktxt.com/book/*/*.html</Include>
+		<Include>http://www.186s.cn/files/article/html/*/*/*.html</Include>
+		<Include>http://www.6xs.cn/xs/*/*/*.html</Include>
+		<Include>http://www.chaojiqiangbing.com/book/*/*/*.html</Include>
+		<Include>http://book.moka123.com/book/*/*/*.html</Include>
+		<Include>http://www.suimeng.com/files/article/html/*/*/*.html</Include>
+		<Include>http://www.hao662.com/haoshu/*/*/*.html</Include>
+		<Include>http://www.tsxs.cc/files/article/html/*/*/*.html</Include>
+		<Include>http://www.ziyuge.com/*/*/*/*/*.html</Include>
+		<Include>http://book.sfacg.com/Novel/*/*/*/</Include>
+		<Include>http://www.7dsw.com/book/*/*/*.html</Include>
+		<Include>http://www.d586.com/*/*/</Include>
+		<Include>http://www.bookgew.com/Html/Book/*/*/*.htm</Include>
+		<Include>http://read.shuhaha.com/Html/Book/*/*/*.html</Include>
+		<Include>http://www.shuhaha.com/Html/Book/*/*/*.html</Include>
+		<Include>http://www.biqi.me/files/article/html/*/*/*.html</Include>
+		<Include>http://www.ttzw.com/book/*/*.html</Include>
+		<Include>http://www.uukanshu.com/*/*/*.html</Include>
+		<Include>http://www.173ed.com/read/*/*.html</Include>
+		<Include>http://www.a240.com/read/*/*.html</Include>
+		<Include>http://www.zhuishu.com/*/*.html</Include>
+		<Include>http://www.shuangde.cc/*/*.html</Include>
+		<Include>http://www.shenmaxiaoshuo.com/ml-*-*/</Include>
+		<Include>http://www.86kankan.com/read/*/*.html</Include>
+		<Include>http://www.fkzww.com/*/*/*.html</Include>
+		<Include>http://www.151kan.com/*/*/*/*.html</Include>
+		<Include>http://www.bookabc.net/*/*/*.html</Include>
+		<Include>http://www.xshuotxt.com/*/*/*/*.html</Include>
+		<Include>http://www.doulaidu.com/*/*/*.html</Include>
+		<Include>http://www.d586.com/*/*/</Include>
+		<Include>http://www.kanshu.la/book/*/*html</Include>
+		<Include>http://www.wtcxs.com/files/article/html/*/*/*.html</Include>
+		<Include>http://www.5du5.com/book/*/*/*.html</Include>
+		<Include>http://book.kanunu.org/*/*/*.html</Include>
+		<Include>http://www.kanunu8.com/book*/*.html</Include>
+		<Include>http://paitxt.com/*/*/*.html</Include>
+		<Include>http://www.shunong.com/yuedu/*/*/*.html</Include>
+		<Include>http://book.yayacms.com/*/book_*_*.html</Include>
+		<Include>http://www.yqhhy.cc/*/*/*.html</Include>
+		<Include>http://www.nuoqiu.com/static/*/*.html</Include>
+		<Include>http://www.17yue.com/*/*/*.html</Include>
+		<Include>http://dukeba.com/book/*/*/*.shtml</Include>
+		<Include>http://www.wenchangshuyuan.com/html/*/*/*.html</Include>
+		<Include>http://www.pofeng.net/xiaoshuo/*/*.html</Include>
+		<Include>http://www.epzww.com/book/*/*</Include>
+		<Include>http://*.xiaoshuokan.com/haokan/*/*.html</Include>
+		<Include>http://www.wobudu.com/*/*.html</Include>
+		<Include>http://www.qb5.com/xiaoshuo/*/*/*.html</Include>
+		<Include>http://www.23us.com/html/*/*/*.html</Include>
+		<Include>http://www.23wx.com/html/*/*/*.html</Include>
+		<Include>http://www.xs222.com/html/*/*/*.html</Include>
+		<Include>http://www.bixiage.com/*/*/*/*.html</Include>
+		<Include>http://www.ranwenxiaoshuo.com/files/article/html/*/*/*.html</Include>
+		<Include>http://www.ranwenxiaoshuo.com/*/*-*-*.html</Include>
+		<Include>http://www.bjxiaoshuo.com/bjxs-*-*/</Include>
+		<Include>http://www.59shuku.com/xiaoshuo/*/*.htm</Include>
+		<Include>http://www.16kbook.org/Html/Book/*/*/*.shtml</Include>
+		<Include>http://www.dixiaoshuo.com/Html/*/*.html</Include>
+		<Include>http://www.nieshu.com/Book/*/*/*.shtml</Include>
+		<Include>http://www.tlxsw.com/files/article/html/*/*/*.html</Include>
+		<Include>http://www.1kanshu.com/files/article/html/*/*/*.html</Include>
+		<Include>http://www.uutxt.org/book/*/*/*.html</Include>
+		<Include>http://www.5800.cc/*/*/*/*.html</Include>
+		<Include>http://www.biquge.com/*/*.html</Include>
+		<Include>http://www.biquge.la/book/*/*.html</Include>
+		<Include>http://www.qududu.com/book/*/*/*.html</Include>
+		<Include>http://www.free97.cn/book/*/*/*.html</Include>
+		<Include>http://www.122s.com/book/*/*.html</Include>
+		<Include>http://www.123du.net/dudu-*/*/*.html</Include>
+		<Include>http://www.123du.cc/dudu-*/*/*.html</Include>
+		<Include>http://www.123du.net/book/*/*.html</Include>
+		<Include>http://www.hwafa.com/*/*.html</Include>
+		<Include>http://www.qmshu.com/html/*/*/*.html</Include>
+		<Include>http://dlzw.cc/article-*-*.html</Include>
+		<Include>http://www.shushu5.com/read/*/*.html</Include>
+		<Include>http://www.xiaoyanwenxue.com/files/article/html/*/*/*.html</Include>
+		<Include>http://www.3gsc.com.cn/bookcon/*_*_*</Include>
+		<Include>http://www.bj-ibook.cn/book/*/*/*.htm</Include>
+		<Include>http://www.baoliny.com/*/*.html</Include>
+		<Include>http://www.dajiadu.net/files/article/html/*/*/*.html</Include>
+		<Include>http://www.yankuai.com/files/article/html/*/*/*.html</Include>
+		<Include>http://www.docin.net/*/*.html</Include>
+		<Include>http://www.dushuge.net/html/*/*/*.html</Include>
+		<Include>http://www.xunshu.org/xunshu/*/*/*.html</Include>
+		<Include>http://www.moneyren.com/book/*/*/*.shtml</Include>
+		<Include>http://wemaxfilipino.com/*/*/*.html</Include>
+		<Include>http://www.85618892.cn/xiaoshuo/*/*/*.shtml</Include>
+		<Include>http://www.bookba.net/Html/Book/*/*/*.html</Include>
+		<Include>http://www.moksos.com/*/*/*.html</Include>
+		<Include>http://dudu8.net/novel/*/*/*.html</Include>
+		<Include>http://www.dawenxue.net/html/*/*/*.html</Include>
+		<Include>http://www.yanmoxuan.org/book/*/*/*.html</Include>
+		<Include>http://www.duyidu.com/xiaoshuo/*/*/*.html</Include>
+		<Include>http://www.69zw.com/xiaoshuo/*/*/*.html</Include>
+		<Include>http://www.kan7.com/xiaoshuo/*/*/*.html</Include>
+		<Include>http://www.laishu.com/book/*/*/*.shtml</Include>
+		<Include>http://www.bxwx.org/b/*/*/*.html</Include>
+		<Include>http://www.bxzw.org/*/*/*/*.shtml</Include>
+		<Include>http://www.360118.com/html/*/*/*.html</Include>
+		<Include>http://www.59to.com/files/article/xiaoshuo/*/*/*.html</Include>
+		<Include>http://www.dyzww.com/cn/*/*/*.html</Include>
+		<Include>http://www.9wh.net/*/*/*.html</Include>
+		<Include>http://www.luoqiu.net/html/*/*/*.html</Include>
+		<Include>http://www.luoqiu.com/html/*/*/*.html</Include>
+		<Include>http://www.epzw.com/files/article/html/*/*/*.html</Include>
+		<Include>http://www.dashubao.com/book/*/*/*.html</Include>
+		<Include>http://b.faloo.com/p/*/*.html</Include>
+		<Include>http://www.baikv.com/*/*.html</Include>
+		<Include>http://www.66721.com/*/*/*.html</Include>
+		<Include>http://www.3dllc.com/html/*/*/*.html</Include>
+		<Include>http://www.xstxt.com/*/*/</Include>
+		<Include>http://www.zzzcn.com/3z*/*/</Include>
+		<Include>http://www.zzzcn.com/modules/article/App.php*</Include>
+		<Include>http://www.nilongdao.com/book/*/*/*.html</Include>
+		<Include>http://xs321.net/*/*/</Include>
+		<Include>http://read.guanhuaju.com/files/article/html/*/*/*.html</Include>
+		<Include>http://www.book108.com/*/*/*.html</Include>
+		<Include>http://5ycn.com/*/*/*.html</Include>
+		<Include>http://www.zhaoxiaoshuo.com/chapter-*-*-*/</Include>
+		<Include>http://*zbzw.com/*/*.html</Include>
+		<Include>http://manghuangji.cc/*/*.html</Include>
+		<Include>http://www.aiqis.com/*/*.html</Include>
+		<Include>http://www.fftxt.net/book/*/*.html</Include>
+		<Include>http://www.5kwx.com/book/*/*/*.html</Include>
+		<Include>http://www.uuxiaoshuo.net/html/*/*/*.html</Include>
+		<Include>http://www.sanyyo.org/*.html</Include>
+		<Include>http://www.chinaisbn.com/*/*/*.html</Include>
+		<Include>http://www.caihongwenxue.com/Html/Book/*/*/*.html</Include>
+		<Include>http://www.shushuw.cn/shu/*/*.html</Include>
+		<Include>http://www.78xs.com/article/*/*/*.shtml</Include>
+		<Include>http://www.miaobige.com/*/*/*.html</Include>
+		<Include>http://www.woaixiaoshuo.com/xiaoshuo/*/*/*.html</Include>
+		<Include>http://www.ty2016.com/book/*/*.html</Include>
+		<Include>http://wx.ty2016.com/*/*/*.html</Include>
+		<Include>http://www.my285.com/*/*/*/*.htm</Include>
+		<Include>http://www.5858xs.com/html/*/*/*.html</Include>
+		<Include>http://book.58xs.com/html/*/*/*.html</Include>
+		<Include>http://book.mihua.net/*/*/*/*.html</Include>
+		<Include>http://www.hjwzw.com/Book/Read/*,*</Include>
+		<Include>http://www.365essay.com/*/*.htm</Include>
+		<Include>http://www.gengxin8.com/read/*/*.html</Include>
+		<Include>http://www.365xs.org/books/*/*/*.html</Include>
+		<Include>http://www.wuruo.com/files/article/html/*/*/*.html</Include>
+		<Include>http://www.remenxs.com/du_*/*/</Include>
+		<Include>http://*.8shuw.net/book/*/*.html</Include>
+		<Include>http://www.pashuw.com/BookReader/*/*.html</Include>
+		<Include>http://read.shanwen.com/html/*/*/*.html</Include>
+		<Include>http://www.qqxs.cc/xs/*/*/*.html</Include>
+		<Include>http://www.69shu.com/txt/*/*</Include>
+		<Include>http://www.e8zw.com/book/*/*/*.html</Include>
+		<Include>http://www.biquge.tw/*_*/*.html</Include>
+		<Include>http://www.8535.org/*/*/*.html*</Include>
+		<Include>http://www.yfzww.com/books/*/*/*.htm</Include>
+		<Include>http://www.lewen8.com/lw*/*.html</Include>
+		<Include>http://www.pinwenba.com/read/*/*.html</Include>
+		<Include>http://down1.qidian.com/bookall/*.htm*</Include>
+		<Include>http://www.77nt.com/*/*.html</Include>
+		<Include>http://www.quanbenba.com/yuedu/*/*/*.html</Include>
+		<Require filename="jquery.min.js"/>
+		<Require filename="underscore-min.js"/>
+		<Require filename="keymaster.min.js"/>
+		<Require filename="Meihua_cn2tw.js"/>
+		<Resource name="fontawesomeWoff" filename="fontawesome-webfont.woff" mimetype="application/octet-stream"/>
+		<Name lang="zh-CN">小说阅读脚本</Name>
+		<Description lang="zh-CN">小说阅读脚本，统一阅读样式，内容去广告、修正拼音字、段落整理，自动下一页</Description>
+		<Name lang="zh-TW">小說閱讀腳本</Name>
+		<Description lang="zh-TW">小說閱讀腳本，統一閱讀樣式，內容去廣告、修正拼音字、段落整理，自動下一頁</Description>
+	</Script>
+	<Script author="Liu Yuyang(sa@linuxer.me)" basedir="youdaodict" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Translate any text selected into a tooltip" enabled="false" filename="youdaodict.user.js" installTime="1455427055226" modified="1455427055226" name="youdaodict" namespace="youdao" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="67c8960f-1e51-4119-94be-d755bc7452d9" version="1.3" installurl="https://github.com/HalfdogStudio/youdaodict/raw/master/youdaodict.user.js" updateurl="https://github.com/HalfdogStudio/youdaodict/raw/master/youdaodict.user.js">
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>*</Include>
+		<Name lang="zh-CN">有道取词</Name>
+		<Description lang="zh-cn">一个可以在浏览器中自由使用的屏幕取词脚本</Description>
+	</Script>
+	<Script author="QIQI" basedir="破解360doc防复制系统" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="破解360doc防复制系统（不登陆360doc时复制，不弹出请登录提示）" enabled="true" filename="%E7%A0%B4%E8%A7%A3360doc%E9%98%B2%E5%A4%8D%E5%88%B6%E7%B3%BB%E7%BB%9F.user.js" installTime="1450359623666" modified="1450359623666" name="破解360doc防复制系统" namespace="https://greasyfork.org/users/16216" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="bfea4918-e391-4f18-b873-bc5b0a3d4b90" version="1.1" installurl="https://greasyfork.org/scripts/12591-%E7%A0%B4%E8%A7%A3360doc%E9%98%B2%E5%A4%8D%E5%88%B6%E7%B3%BB%E7%BB%9F/code/%E7%A0%B4%E8%A7%A3360doc%E9%98%B2%E5%A4%8D%E5%88%B6%E7%B3%BB%E7%BB%9F.user.js" updateurl="https://greasyfork.org/scripts/12591-%E7%A0%B4%E8%A7%A3360doc%E9%98%B2%E5%A4%8D%E5%88%B6%E7%B3%BB%E7%BB%9F/code/%E7%A0%B4%E8%A7%A3360doc%E9%98%B2%E5%A4%8D%E5%88%B6%E7%B3%BB%E7%BB%9F.user.js">
+		<Grant>none</Grant>
+		<Include>http://www.360doc.com/content/*</Include>
+	</Script>
+	<Script basedir="Google_Favicons" checkRemoteUpdates="1" dependhash="61a8eff0698bd465613a60a442f9858bd658311e" description="Adds favicons to Google search results." enabled="false" filename="Google_Favicons.user.js" installTime="1443751384743" modified="1459401679507" name="Google Favicons" namespace="https://greasyfork.org/users/14186" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="a992232b-246b-44c2-961b-8e626b61cd7b" version="1.01" installurl="https://greasyfork.org/scripts/12395-google-favicons/code/Google%20Favicons.user.js" updateurl="https://greasyfork.org/scripts/12395-google-favicons/code/Google%20Favicons.user.js" icon="ezjWmEO.png">
+		<Exclude>https://www.google.*/voice/*</Exclude>
+		<Exclude>https://www.google.*/maps/*</Exclude>
+		<Grant>none</Grant>
+		<Include>https://www.google.*/*</Include>
+	</Script>
+	<Script basedir="查看发帖" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="查看百度贴吧某用户在某贴吧或者全部贴吧的发言" enabled="false" filename="%E6%9F%A5%E7%9C%8B%E5%8F%91%E5%B8%96.user.js" installTime="1443943740600" modified="1443943740600" name="查看发帖" namespace="firefox" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="abf9f6cb-2fb3-411b-bbb2-a524637939c6" version="1.2" installurl="https://greasyfork.org/scripts/291-%E6%9F%A5%E7%9C%8B%E5%8F%91%E5%B8%96/code/%E6%9F%A5%E7%9C%8B%E5%8F%91%E5%B8%96.user.js" updateurl="https://greasyfork.org/scripts/291-%E6%9F%A5%E7%9C%8B%E5%8F%91%E5%B8%96/code/%E6%9F%A5%E7%9C%8B%E5%8F%91%E5%B8%96.user.js">
+		<Grant>none</Grant>
+		<Include>http://tieba.baidu.com/p/*</Include>
+		<Include>http://tieba.baidu.com/f?ct*</Include>
+	</Script>
+	<Script basedir="Discuz-download" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Discuz附件下载权限绕过" enabled="false" filename="Discuz-download.user.js" installTime="1443943740822" modified="1443943740822" name="Discuz-download" namespace="https://greasyfork.org/users/54" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="57187312-4cc2-49b9-a976-4b3593b0c852" version="1.0" installurl="https://greasyfork.org/scripts/2430-discuz-download/code/Discuz-download.user.js" updateurl="https://greasyfork.org/scripts/2430-discuz-download/code/Discuz-download.user.js">
+		<Grant>none</Grant>
+		<Include>http*</Include>
+	</Script>
+	<Script basedir="4chan_Image_Opener" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Open all images of a thread in tabs. (With Ctrl+Alt+X or one single click)" enabled="false" filename="104598.user.js" installTime="1443943741061" modified="1443943741061" name="4chan Image Opener" namespace="http://userscripts.org/scripts/show/104598" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="a7024351-4611-469b-bbe8-3922708730b4" version="2.0" installurl="http://userscripts-mirror.org/scripts/source/104598.user.js" updateurl="http://userscripts-mirror.org/scripts/source/104598.user.js">
+		<Grant>none</Grant>
+		<Include>http://boards.4chan.org/*</Include>
+		<Include>https://boards.4chan.org/*</Include>
+		<Match>http://boards.4chan.org/*</Match>
+		<Match>https://boards.4chan.org/*</Match>
+	</Script>
+	<Script basedir="tieba_emotion_helper" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="贴吧自定义表情批量修改" enabled="false" filename="tieba_emotion_helper.user.js" installTime="1443943741078" modified="1443943741078" name="tieba_emotion_helper" namespace="firefox" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="69ad7cf2-cfdc-4a57-8661-4ebf1388ca17" version="1" installurl="https://greasyfork.org/scripts/355-tieba-emotion-helper/code/tieba_emotion_helper.user.js" updateurl="https://greasyfork.org/scripts/355-tieba-emotion-helper/code/tieba_emotion_helper.user.js">
+		<Grant>GM_addStyle</Grant>
+		<Include>http://tieba.baidu.com/*</Include>
+	</Script>
+	<Script basedir="贴吧坟贴提醒（脚本版）" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="修改自：http://tieba.baidu.com/p/1748230170 原扩展作者864907600cc，修改者h573980998 自定义by绯色起源" enabled="false" filename="%E8%B4%B4%E5%90%A7%E5%9D%9F%E8%B4%B4%E6%8F%90%E9%86%92%EF%BC%88%E8%84%9A%E6%9C%AC%E7%89%88%EF%BC%89.user.js" installTime="1443943741435" modified="1443943741435" name="贴吧坟贴提醒（脚本版）" namespace="https://greasyfork.org/users/54" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="5cef1a65-b1ed-4010-900d-df2be9369d60" version="0.7" installurl="https://greasyfork.org/scripts/367-%E8%B4%B4%E5%90%A7%E5%9D%9F%E8%B4%B4%E6%8F%90%E9%86%92-%E8%84%9A%E6%9C%AC%E7%89%88/code/%E8%B4%B4%E5%90%A7%E5%9D%9F%E8%B4%B4%E6%8F%90%E9%86%92%EF%BC%88%E8%84%9A%E6%9C%AC%E7%89%88%EF%BC%89.user.js" updateurl="https://greasyfork.org/scripts/367-%E8%B4%B4%E5%90%A7%E5%9D%9F%E8%B4%B4%E6%8F%90%E9%86%92-%E8%84%9A%E6%9C%AC%E7%89%88/code/%E8%B4%B4%E5%90%A7%E5%9D%9F%E8%B4%B4%E6%8F%90%E9%86%92%EF%BC%88%E8%84%9A%E6%9C%AC%E7%89%88%EF%BC%89.user.js">
+		<Grant>GM_addStyle</Grant>
+		<Include>http://tieba.baidu.com/p/*</Include>
+		<Include>http://tieba.baidu.com/f*</Include>
+		<Include>http://tieba.baidu.com/i/*</Include>
+	</Script>
+	<Script basedir="Tieba_Quotor" checkRemoteUpdates="1" dependhash="db5ab6804723fbc48d4ac5b4c6447607b1b8c10e" description="贴吧引用" enabled="false" filename="Tieba_Quotor.user.js" installTime="1443943740399" modified="1443943740399" name="Tieba Quotor" namespace="http://gera2ld.blog.163.com/" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="faf66e87-08f7-49a2-8019-7f740d7a88f8" version="1.5.1" installurl="https://greasyfork.org/scripts/115-tieba-quotor/code/Tieba%20Quotor.user.js" updateurl="https://greasyfork.org/scripts/115-tieba-quotor/code/Tieba%20Quotor.user.js" icon="a0ad718d86d21262ccd6ff271ece08a3">
+		<Exclude>http://tieba.baidu.com/tb/*</Exclude>
+		<Grant>none</Grant>
+		<Include>http://tieba.baidu.com/*</Include>
+		<Require filename="code.user.js"/>
+	</Script>
+	<Script author="AC" basedir="AC-从Google_Baidu_Bing等搜索引擎结果中屏蔽自定义网站" checkRemoteUpdates="1" dependhash="68d7fc41c4a475d08ba3b902be022c5967e8c17a" description="从Google Baidu Bing等搜索引擎结果中屏蔽自定义的网站" enabled="false" filename="%E4%BB%8EGoogle_Baidu_Bing%E7%AD%89%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%BB%93%E6%9E%9C%E4%B8%AD%E5%.user.js" installTime="1459479879529" modified="1459479879529" name="AC-从Google Baidu Bing等搜索引擎结果中屏蔽自定义网站" namespace="BlockKafanTopicinGoogle" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="1cc1309a-8181-4a5a-99f2-284ce7056fb0" version="0.6.0" installurl="https://greasyfork.org/scripts/13408-%E4%BB%8Egoogle-baidu-bing%E7%AD%89%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%BB%93%E6%9E%9C%E4%B8%AD%E5%B1%8F%E8%94%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E7%AB%99/code/%E4%BB%8EGoogle%20Baidu%20Bing%E7%AD%89%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%BB%93%E6%9E%9C%E4%B8%AD%E5%B1%8F%E8%94%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E7%AB%99.user.js" updateurl="https://greasyfork.org/scripts/13408-%E4%BB%8Egoogle-baidu-bing%E7%AD%89%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%BB%93%E6%9E%9C%E4%B8%AD%E5%B1%8F%E8%94%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E7%AB%99/code/%E4%BB%8EGoogle%20Baidu%20Bing%E7%AD%89%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%BB%93%E6%9E%9C%E4%B8%AD%E5%B1%8F%E8%94%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E7%AB%99.user.js" icon="icon.jpg">
+		<Grant>note 2016.2.6 更新了：根据反馈，增加了新的搜索点：Disconnect.ME搜索点，建立了一个简单的搜索结果</Grant>
+		<Grant>note 2015.11.22 更新了：采用了新的事件触发MutationObserver，替代之前经常被出触发的DOMinsert事件，大大减少了触发的情况，减轻了浏览器负担</Grant>
+		<Grant>note 2015.11.21 更新了：之前由于偷懒，所以简单的写了些大部分功能，这次基本上是完善了总的功能，应该不会有漏网之鱼了，如果出现问题请及时反馈邮箱1353464539@qq.com，如果没有问题的话应该来说这是最后一版了，除非以后代码失效了我会进行修改的</Grant>
+		<Grant>note 2015.11.4 更新了：谷歌干掉搜索结果留下的空白--注意先备份以前的修改</Grant>
+		<Grant>note 2015.10.31-4 一定程度上再次调整了卡顿的几率，同时加入函数tryto_del_specificEle(url_d, spec_d, spec_f_d, index_d)，还有删除了百度的软件推广</Grant>
+		<Grant>note 2015.10.31-3 看来都不喜欢卡饭，我就直接写好了不要www.kafan.cn好了，之前只是针对www.kafan.cn/topic</Grant>
+		<Grant>note 2015.10.31-2 修正了(因修改谷歌页面卡顿)导致的百度卡死情况,蛋疼的百度在某个f13标签卡死了</Grant>
+		<Grant>note 2015.10.31 更新处理谷歌页面卡顿的情况-求测试和反馈</Grant>
+		<Include>/^https?\:\/\/encrypted.google.[^\/]+/</Include>
+		<Include>/^https?\:\/\/www.google.[^\/]+/</Include>
+		<Include>/^https?\:\/\/www.baidu.[^\/]+/</Include>
+		<Include>/^https?\:\/\/[\w]+.bing.[^\/]+/</Include>
+		<Include>/^https?\:\/\/www.haosou.com+/</Include>
+		<Include>/^https?\:\/\/www.youdao.com/</Include>
+		<Include>/^https?:\/\/www.sogou.com/</Include>
+		<Include>/^https?:\/\/search.disconnect.me/</Include>
+	</Script>
+	<Script author="AC" basedir="AC-Baidu：绕过百度重定向直接访问网页" checkRemoteUpdates="1" dependhash="68d7fc41c4a475d08ba3b902be022c5967e8c17a" description="繞過百度搜索結果中的自己的跳轉鏈接，直接訪問原始網頁-反正都能看懂" enabled="true" filename="AC-Baidu%EF%BC%9A%E7%BB%95%E8%BF%87%E7%99%BE%E5%BA%A6%E9%87%8D%E5%AE%9A%E5%90%91%E7%9B%B4%E6%8E%A5%E8%.user.js" installTime="1459605553775" modified="1459605553775" name="AC-Baidu：绕过百度重定向直接访问网页" namespace="1353464539@qq.com" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="0168068c-ea99-4d08-b2f2-88c4514c4ec5" version="6.4" installurl="https://greasyfork.org/scripts/14178-ac-baidu-%E7%BB%95%E8%BF%87%E7%99%BE%E5%BA%A6%E9%87%8D%E5%AE%9A%E5%90%91%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%E7%BD%91%E9%A1%B5/code/AC-Baidu%EF%BC%9A%E7%BB%95%E8%BF%87%E7%99%BE%E5%BA%A6%E9%87%8D%E5%AE%9A%E5%90%91%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%E7%BD%91%E9%A1%B5.user.js" updateurl="https://greasyfork.org/scripts/14178-ac-baidu-%E7%BB%95%E8%BF%87%E7%99%BE%E5%BA%A6%E9%87%8D%E5%AE%9A%E5%90%91%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%E7%BD%91%E9%A1%B5/code/AC-Baidu%EF%BC%9A%E7%BB%95%E8%BF%87%E7%99%BE%E5%BA%A6%E9%87%8D%E5%AE%9A%E5%90%91%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%E7%BD%91%E9%A1%B5.user.js" icon="icon.jpg">
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>http://www.baidu.com/*</Include>
+		<Include>https://www.baidu.com/*</Include>
+		<Include>http://www.sogou.com/*</Include>
+		<Include>https://www.sogou.com/*</Include>
+	</Script>
+	<Script author="QIQI" basedir="绕过百度网盘大文件下载限制" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="绕过百度网盘大文件下载限制，不用装云管家，直接下载" enabled="false" filename="%E7%BB%95%E8%BF%87%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%A4%A7%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E9%99.user.js" installTime="1448677396588" modified="1448677396588" name="绕过百度网盘大文件下载限制" namespace="https://greasyfork.org/users/16216" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="3121cc23-b180-413c-babb-ef82d5d4348a" version="1.0" installurl="https://greasyfork.org/scripts/13736-%E7%BB%95%E8%BF%87%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%A4%A7%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E9%99%90%E5%88%B6/code/%E7%BB%95%E8%BF%87%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%A4%A7%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E9%99%90%E5%88%B6.user.js" updateurl="https://greasyfork.org/scripts/13736-%E7%BB%95%E8%BF%87%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%A4%A7%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E9%99%90%E5%88%B6/code/%E7%BB%95%E8%BF%87%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%A4%A7%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E9%99%90%E5%88%B6.user.js">
+		<Grant>none</Grant>
+		<Match>*://pan.baidu.com/*</Match>
+		<Match>*://yun.baidu.com/*</Match>
+	</Script>
+	<Script author="mod by jasake" basedir="TongWen_convert2_CHS" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="把繁体转换成简体，convert CHT 2 CHS" enabled="false" filename="TongWen-convert2-CHS.user.js" installTime="1453340376044" modified="1453340376044" name="TongWen convert2 CHS" namespace="a@b.c" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="d297b079-6aab-4ed4-a22c-e3d99f32e856" version="0.1" installurl="file:///C:/Users/desk/AppData/Local/Temp/360zip$Temp/360$0/TongWen-convert2-CHS.user.js" updateurl="file:///C:/Users/desk/AppData/Local/Temp/360zip$Temp/360$0/TongWen-convert2-CHS.user.js">
+		<Grant>GM_registerMenuCommand</Grant>
+		<Include>http:*</Include>
+		<Include>https:*</Include>
+		<Include>file://*</Include>
+	</Script>
+	<Script basedir="pageSpeak" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="text to speech Service from responsivevoice.org to read aloud the page" enabled="false" filename="pageSpeak.user.js" installTime="1453466962150" modified="1453466962150" name="pageSpeak" namespace="tts@reverland.org" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="4f3ff420-7744-416f-a20b-bc308d13666d" version="1.1" installurl="https://greasyfork.org/scripts/14492-pagespeak/code/pageSpeak.user.js" updateurl="https://greasyfork.org/scripts/14492-pagespeak/code/pageSpeak.user.js">
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Include>*</Include>
+		<Name lang="zh-CN">中英文语音合成选读</Name>
+		<Description lang="zh-CN">调用responsivevoice.org的语音合成服务朗读选中文本</Description>
+	</Script>
+	<Script basedir="百度盘直接下载" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="就他妈不装百度云管家" enabled="false" filename="%E7%99%BE%E5%BA%A6%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD.user.js" installTime="1453552146838" modified="1453552146838" name="百度盘直接下载" namespace="pan.baidu.com" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="58ff108c-c4fc-49bf-a47a-6290e75b0453" version="0.0.1" installurl="https://greasyfork.org/scripts/13638-%E7%99%BE%E5%BA%A6%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD/code/%E7%99%BE%E5%BA%A6%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD.user.js" updateurl="https://greasyfork.org/scripts/13638-%E7%99%BE%E5%BA%A6%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD/code/%E7%99%BE%E5%BA%A6%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD.user.js">
+		<Grant>none</Grant>
+		<Match>*://pan.baidu.com/*</Match>
+		<Match>*://yun.baidu.com/*</Match>
+	</Script>
+	<Script author="patwonder" basedir="百度贴吧图片缩放增强脚本" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="增强百度贴吧图片缩放，看大图无需开新标签页。" enabled="false" filename="baidu-tieba-image-scaling-enhancer.user.js" installTime="1455427060044" modified="1455427060044" name="百度贴吧图片缩放增强脚本" namespace="patwonder@163.com" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="03c079c4-aff5-4d85-923f-1a0f8a69f89d" version="0.69" installurl="https://gist.githubusercontent.com/patwonder/99835e0cece2ac9928ad/raw/baidu-tieba-image-scaling-enhancer.user.js" updateurl="https://gist.githubusercontent.com/patwonder/99835e0cece2ac9928ad/raw/baidu-tieba-image-scaling-enhancer.user.js">
+		<Grant>none</Grant>
+		<Include>http://tieba.baidu.com/club/*/p/*</Include>
+		<Include>http://tieba.baidu.com/f?kz=*</Include>
+		<Include>http://tieba.baidu.com/p/*</Include>
+		<Include>http://tieba.baidu.com/f?*ct=*z=*</Include>
+		<Include>http://tieba.baidu.com.cn/f?kz=*</Include>
+		<Include>http://tieba.baidu.com.cn/p/*</Include>
+		<Include>http://tieba.baidu.com.cn/f?*ct=*z=*</Include>
+		<Include>http://post.baidu.com/f?kz=*</Include>
+		<Include>http://post.baidu.com/p/*</Include>
+		<Include>http://post.baidu.com/f?*ct=*z=*</Include>
+		<Include>http://post.baidu.com.cn/f?kz=*</Include>
+		<Include>http://post.baidu.com.cn/p/*</Include>
+		<Include>http://post.baidu.com.cn/f?*ct=*z=*</Include>
+	</Script>
+	<Script author="Reek | reeksite.com" basedir="Anti-Adblock_Killer_Reek" checkRemoteUpdates="1" dependhash="7ecfbee51d3094add21c71ab714cdeb469a482e3" description="Helps you keep your Ad-Blocker active, when you visit a website and it asks you to disable." enabled="false" filename="Anti-Adblock_Killer_%7C_Reek.user.js" installTime="1455682520305" modified="1455682520305" name="Anti-Adblock Killer | Reek" namespace="https://userscripts.org/scripts/show/155840" noframes="false" runAt="document-start" updateMetaStatus="fail" uuid="c2b789b3-5349-45c0-ab38-d4cd37e1a7d4" version="9.2" installurl="https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js" updateurl="https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js" icon="anti-adblock-killer-icon.png">
+		<Grant>unsafeWindow</Grant>
+		<Grant>GM_addStyle</Grant>
+		<Grant>GM_getValue</Grant>
+		<Grant>GM_setValue</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Grant>GM_registerMenuCommand</Grant>
+		<Grant>GM_deleteValue</Grant>
+		<Grant>GM_listValues</Grant>
+		<Grant>GM_getResourceText</Grant>
+		<Grant>GM_getResourceURL</Grant>
+		<Grant>GM_log</Grant>
+		<Grant>GM_openInTab</Grant>
+		<Grant>GM_setClipboard</Grant>
+		<Grant>GM_info</Grant>
+		<Grant>GM_getMetadata</Grant>
+		<Include>http://*/*</Include>
+		<Include>https://*/*</Include>
+	</Script>
+	<Script author="Cat73" basedir="网页限制解除" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="通杀大部分网站，可以解除禁止复制、剪切、选择文本、右键菜单的限制。" enabled="false" filename="%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4.user.js" installTime="1455678427545" modified="1455678427545" name="网页限制解除" namespace="https://www.github.com/Cat7373/" noframes="false" runAt="document-start" updateMetaStatus="ok" uuid="4ad25780-2c9b-4889-9f40-f7da4f57cac5" version="1.3" installurl="https://greasyfork.org/scripts/14146-%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4/code/%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4.user.js" homepageurl="https://cat7373.github.io/remove-web-limits/" updateurl="https://greasyfork.org/scripts/14146-%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4/code/%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4.user.js">
+		<Grant>none</Grant>
+		<Match>*://*/*</Match>
+		<Name lang="en">Remove web limits</Name>
+		<Description lang="en">Pass to kill most of the site, you can lift the restrictions prohibited to copy, cut, select the text, right-click menu.</Description>
+		<Name lang="zh">网页限制解除</Name>
+		<Description lang="zh">通杀大部分网站，可以解除禁止复制、剪切、选择文本、右键菜单的限制。</Description>
+		<Name lang="zh-CN">网页限制解除</Name>
+		<Description lang="zh-CN">通杀大部分网站，可以解除禁止复制、剪切、选择文本、右键菜单的限制。</Description>
+		<Name lang="zh-TW">網頁限制解除</Name>
+		<Description lang="zh-TW">通殺大部分網站，可以解除禁止復制、剪切、選擇文本、右鍵菜單的限制。</Description>
+		<Name lang="ja">ウェブの規制緩和</Name>
+		<Description lang="ja">サイトのほとんどを殺すために渡し、あなたは、コピー切り取り、テキスト、右クリックメニューを選択することは禁止の制限を解除することができます。</Description>
+	</Script>
+	<Script author="极品小猫" basedir="网盘自动填写密码【增强版】" checkRemoteUpdates="1" dependhash="d45fa799231a685a10294f9237038c385d179ea4" description="网盘自动填写提取密码【增强版】+网盘超链接与提取码融合。" enabled="true" filename="%E7%BD%91%E7%9B%98%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%86%99%E5%AF%86%E7%A0%81%E3%80%90%E5%A2%9E%E5%BC%BA%E7%89.user.js" installTime="1456627132209" modified="1459486699631" name="网盘自动填写密码【增强版】" namespace="http://www.cnblogs.com/hkmhd/" noframes="false" runAt="document-idle" updateMetaStatus="ok" uuid="1bd0b73f-7431-4072-9718-c23cacfa8eb4" version="2.1.1" installurl="https://greasyfork.org/scripts/13463-%E7%BD%91%E7%9B%98%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%86%99%E5%AF%86%E7%A0%81-%E5%A2%9E%E5%BC%BA%E7%89%88/code/%E7%BD%91%E7%9B%98%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%86%99%E5%AF%86%E7%A0%81%E3%80%90%E5%A2%9E%E5%BC%BA%E7%89%88%E3%80%91.user.js" updateurl="https://greasyfork.org/scripts/13463-%E7%BD%91%E7%9B%98%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%86%99%E5%AF%86%E7%A0%81-%E5%A2%9E%E5%BC%BA%E7%89%88/code/%E7%BD%91%E7%9B%98%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%86%99%E5%AF%86%E7%A0%81%E3%80%90%E5%A2%9E%E5%BC%BA%E7%89%88%E3%80%91.user.js">
+		<Exclude>/https?://www.baidu.com/(?:s|baidu)\?/</Exclude>
+		<Grant>unsafeWindow</Grant>
+		<Include>http://pan.baidu.com/share/init?*</Include>
+		<Include>http://yun.baidu.com/share/init?*</Include>
+		<Include>http://www.kuaipan.cn/file/id_*</Include>
+		<Include>http://*.yunpan.cn/lk/*</Include>
+		<Include>http://vdisk.weibo.com/lc/*</Include>
+		<Include>http://www.ftoow.com/*</Include>
+		<Include>http://bbs.kafan.cn/*</Include>
+		<Require filename="jquery-2.1.4.js"/>
+	</Script>
+	<Script author="ywzhaiqi" basedir="BaiduPanDownloadHelper_modify_by_ted423" checkRemoteUpdates="1" dependhash="34a22be094f16d9003d30595cebf09b4993ad05e" description="批量导出百度盘的下载链接" enabled="false" filename="BaiduPanDownloadHelper_modify_by_ted423.user.js" installTime="1455678920047" modified="1455678920047" name="BaiduPanDownloadHelper modify by ted423" namespace="https://github.com/ywzhaiqi" noframes="false" runAt="document-start" updateMetaStatus="ok" uuid="b97bb4b7-cbdb-4c6e-bab2-3cecb560e236" version="2016.01.09.0" installurl="https://greasyfork.org/scripts/7382-baidupandownloadhelper-modify-by-ted423/code/BaiduPanDownloadHelper%20modify%20by%20ted423.user.js" homepageurl="https://greasyfork.org/scripts/294/" updateurl="https://greasyfork.org/scripts/7382-baidupandownloadhelper-modify-by-ted423/code/BaiduPanDownloadHelper%20modify%20by%20ted423.user.js">
+		<Grant>GM_addStyle</Grant>
+		<Grant>GM_setClipboard</Grant>
+		<Grant>GM_openInTab</Grant>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>http*://yun.baidu.com/share/*</Include>
+		<Include>http*://pan.baidu.com/share/*</Include>
+		<Include>http*://yun.baidu.com/s/*</Include>
+		<Include>http*://pan.baidu.com/s/*</Include>
+		<Include>http*://pan.baidu.com/wap/*</Include>
+		<Include>http*://yun.baidu.com/wap/*</Include>
+		<Include>http*://yun.baidu.com/pcloud/album/*</Include>
+		<Include>http*://pan.baidu.com/pcloud/album/*</Include>
+		<Include>http*://pan.baidu.com/disk/home*</Include>
+		<Include>http*://yun.baidu.com/disk/home*</Include>
+		<Require filename="jquery-2.1.4.min.js"/>
+		<Require filename="gm2_port_v102.js"/>
+	</Script>
+	<Script author="Reek | reeksite.com" basedir="500px.com_Download_Photo" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Add button to download photo." enabled="false" filename="500pxcom_Download_Photo.user.js" installTime="1455682920559" modified="1455682920559" name="500px.com Download Photo" namespace="06msNqk7e1ub45dZ" noframes="false" runAt="document-start" updateMetaStatus="fail" uuid="77e79124-bffa-441c-b25b-0cb6f5bc73b2" version="1.1" installurl="https://greasyfork.org/scripts/8416-500px-com-download-photo/code/500pxcom%20Download%20Photo.user.js" updateurl="https://greasyfork.org/scripts/8416-500px-com-download-photo/code/500pxcom%20Download%20Photo.user.js">
+		<Grant>none</Grant>
+		<Include>http*://500px.com/*</Include>
+	</Script>
+	<Script author="AC 原作:King.Sollyu" basedir="AC-CSDN自动评论_生效范围修改" checkRemoteUpdates="1" dependhash="5681d3ef6a228a45280a815376c3408573fca59c" description="自动评论,返还下载积分" enabled="false" filename="AC-CSDN%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA_%E7%94%9F%E6%95%88%E8%8C%83%E5%9B%B4%E4%BF%AE%E6%94%B9.user.js" installTime="1455684180413" modified="1455684180413" name="AC-CSDN自动评论_生效范围修改" namespace="Sollyu" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="eadd8efc-26ee-4172-8b64-9f50c685d798" version="2.3" installurl="https://greasyfork.org/scripts/13468-ac-csdn%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA-%E7%94%9F%E6%95%88%E8%8C%83%E5%9B%B4%E4%BF%AE%E6%94%B9/code/AC-CSDN%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA_%E7%94%9F%E6%95%88%E8%8C%83%E5%9B%B4%E4%BF%AE%E6%94%B9.user.js" updateurl="https://greasyfork.org/scripts/13468-ac-csdn%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA-%E7%94%9F%E6%95%88%E8%8C%83%E5%9B%B4%E4%BF%AE%E6%94%B9/code/AC-CSDN%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA_%E7%94%9F%E6%95%88%E8%8C%83%E5%9B%B4%E4%BF%AE%E6%94%B9.user.js" icon="icon.jpg">
+		<Grant>none</Grant>
+		<Include>http://download.csdn.net/*</Include>
+		<Require filename="jquery-1.9.0.min.js"/>
+	</Script>
+	<Script basedir="Baidu_Tieba_No_Login" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="View Baidu Tieba without login." enabled="false" filename="Baidu_Tieba_No_Login.user.js" installTime="1455684321729" modified="1455684321729" name="Baidu Tieba: No Login" namespace="VA_i" noframes="false" runAt="document-start" updateMetaStatus="ok" uuid="53ea3cce-0f52-41dc-8f77-742d1a324bd0" version="1.0.1.20160106" installurl="https://greasyfork.org/scripts/14151-baidu-tieba-no-login/code/Baidu%20Tieba:%20No%20Login.user.js" updateurl="https://greasyfork.org/scripts/14151-baidu-tieba-no-login/code/Baidu%20Tieba:%20No%20Login.user.js">
+		<Grant>unsafeWindow</Grant>
+		<Include>http://tieba.baidu.com/*</Include>
+		<Name lang="zh-CN">百度贴吧：不登录即可看贴</Name>
+		<Description lang="zh-CN">百度贴吧看贴（包括楼中楼）无须登录。</Description>
+		<Name lang="zh-TW">百度贴吧：不登入即可看貼</Name>
+		<Description lang="zh-TW">百度贴吧看貼（包括樓中樓）无須登入。</Description>
+	</Script>
+	<Script basedir="test" checkRemoteUpdates="1" dependhash="70143f250a5f71a7f66b276f720edabed689b35d" description="" enabled="true" filename="test.user.js" installTime="1456665396938" modified="1459413878115" name="lesmao create links" namespace="lesmao create links" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="1fbc7cb7-513e-4ac3-9d8c-b571877f748f" version="0.1.1" installurl="file:///D:/Firefox/Profiles/gm_scripts/test/test.user.js" updateurl="file:///D:/Firefox/Profiles/gm_scripts/test/test.user.js" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACzklEQVQ4jVWSXUhUCRiGnzNnzjnjoKOTVs7oqK1NTBpYCWvtlsGyFdUWRbYXUREVXoRMP1AXQRTsbix1ERVRUovLslA0JNF/tNEGEvRD0UWLmE0/VmZ/0s+kg+XbRUc5+8J3930P7/d9LwCSDL5qDPAr0Az8DaSA/cASIOz2ICk4PCMpnMlkosCPQBt+/4AZzJM1YpSckgrlVFYpMCbxMZiYdNIeW10lKSRpmaRSSQaSfNFodCbQ5c8rkFVULHt0iZxIbBiQX/eDwvVzVTR/2aVNB1vi/wMAASCFYcgw/cIwBAyXzzBkBwIybEfWyOgnM5i3WpLlWZsE8Mg7BCiUG1ROwFFhQUhVY8s1Ij9XAdsS0NrY2BiUVDgEmVIRK30dcBwVhUNaNPN7bU2u1J+7t+vogd916q+9+vf4YV1KHdKR5l2qq5/x4LtZ8yZIqpHkJxwOT9u+OdlbEYuqqjKmk4d26Mr5lNrv3tSHnrQG33cr2/tE6fv/6eLFc2ratuMekfHleFTTtGZF99TaGuUGc7Rva1LXT6X09GGnPr5/q65rV/Wmo10D2azednZr/aqmNiDPCygcH//mWsOC2TJDBZpeW6s7e5r1+fF9ferL6MYv+5U+fUGS1PHPrcHKSHkGWAv4hgCm6fMdW9owX/HEuEFAMxLVajvSrL7nHcp2dmqg56l6Xz7ThqZkGngOvAHmeV0cLi0p7ppVP6UV6AdUHa/Q7TMtyj6+3d9x8/KLnxcvlGVZ7UCL+6nLQCEAPsv+A9PfZzrOAuA3IFsWLb6avnF+i/pf/jR54sT1wCDwDNgIfADeAXMALDsSO2GPLpEdLd/pBms58K3H4UqgHTjqWu9xgUmACIZxxzD9wjTPugAkjZJU7YalACgGcoAyYC+wDogDNAAZ4BXQCuS7gJikOkmOpDJJQ1c3vB8AmOruvRvYBwRdgCHJ51bIm32vvgAKMW4f4GmDZAAAAABJRU5ErkJggg==">
+		<Grant>none</Grant>
+		<Include>http://www.lesmao.net/*</Include>
+	</Script>
+	<Script author="有一份田" basedir="百度网盘助手•改" checkRemoteUpdates="1" dependhash="113e4fff385d6347f48fc66096ab8e92cd41e079" description="显示百度网盘文件的直接链接,突破大文件需要使用电脑管家的限制" enabled="true" filename="%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%8A%A9%E6%89%8B%E2%80%A2%E6%94%B9.user.js" installTime="1459340641296" modified="1459340641296" name="百度网盘助手•改" namespace="https://greasyfork.org/zh-CN/scripts/986-百度网盘助手" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="2606022d-1f40-46da-bdf1-a30b33db7108" version="3.0.6" installurl="https://greasyfork.org/scripts/17083-%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%8A%A9%E6%89%8B-%E6%94%B9/code/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%8A%A9%E6%89%8B%E2%80%A2%E6%94%B9.user.js" updateurl="https://greasyfork.org/scripts/17083-%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%8A%A9%E6%89%8B-%E6%94%B9/code/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%8A%A9%E6%89%8B%E2%80%A2%E6%94%B9.user.js" icon="script_dupanlink_icon_48.png">
+		<Exclude>http://yun.baidu.com</Exclude>
+		<Exclude>http://yun.baidu.com/#*</Exclude>
+		<Exclude>http://pan.baidu.com/share/manage*</Exclude>
+		<Exclude>http://pan.baidu.com/disk/recyclebin*</Exclude>
+		<Exclude>http://yun.baidu.com/pcloud/album/info*</Exclude>
+		<Grant>unsafeWindow</Grant>
+		<Grant>GM_setClipboard</Grant>
+		<Include>http://pan.baidu.com/*</Include>
+		<Include>http://yun.baidu.com/*</Include>
+		<Require filename="jquery-2.1.1.min.js"/>
+	</Script>
+	<Script basedir="FaviconizeTheWeb" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Adds a favicon for the website next to every external link on the page.  Clearly shows when you will be leaving the current site, and where you will be going!  (Unfortunately making links longer than expected can result in unwanted overflow on various websites.  For example, Google header bar!)" enabled="false" filename="FaviconizeTheWeb.user.js" installTime="1459403075941" modified="1459403075941" name="FaviconizeTheWeb" namespace="FTW" noframes="false" runAt="document-end" updateMetaStatus="fail" uuid="4187c301-187d-4577-822c-b9b94d27f6ff" version="1.5.2" installurl="https://greasyfork.org/scripts/7665-faviconizetheweb/code/FaviconizeTheWeb.user.js" updateurl="https://greasyfork.org/scripts/7665-faviconizetheweb/code/FaviconizeTheWeb.user.js">
+		<Exclude>http://www.delicious.com/search*</Exclude>
+		<Exclude>https://www.delicious.com/search*</Exclude>
+		<Exclude>http://duckduckgo.com/*</Exclude>
+		<Exclude>https://duckduckgo.com/*</Exclude>
+		<Exclude>http://www.jobs.ac.uk/*</Exclude>
+		<Grant>none</Grant>
+		<Include>*</Include>
+	</Script>
+	<Script basedir="Bilibili_Fixer_-_Perfect!" checkRemoteUpdates="1" dependhash="6482ed176726c307862ca6a909c0f3548e4221a0" description="情人节的2233又回来了♥" enabled="true" filename="Bilibili_Fixer_-_Perfect!.user.js" installTime="1459404010604" modified="1459404010604" name="Bilibili Fixer - Perfect!" namespace="FireAway-剑仙乘仙剑" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="cf7030d0-8bac-4eb1-a586-330a5c0883b5" version="11.0.5.5 Sparks Fly" installurl="https://greasyfork.org/scripts/663-bilibili-fixer-perfect/code/Bilibili%20Fixer%20-%20Perfect!.user.js" updateurl="https://greasyfork.org/scripts/663-bilibili-fixer-perfect/code/Bilibili%20Fixer%20-%20Perfect!.user.js">
+		<Exclude>*://apis.google.com/*</Exclude>
+		<Exclude>*://secure.bilibili.*/*</Exclude>
+		<Exclude>*://static-s.bilibili.*/*</Exclude>
+		<Exclude>*://ssl.bilibili.*/*</Exclude>
+		<Exclude>*://live.bilibili.*/*</Exclude>
+		<Exclude>*://docs.bilibili.*/*</Exclude>
+		<Exclude>*://member.bilibili.*/*</Exclude>
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>*://*.bilibili.*/*</Include>
+		<Include>*://*.bilibili.*</Include>
+		<Include>*://*.bilibili.*</Include>
+		<Include>*://bilibili.*/*</Include>
+		<Include>*://www.iqiyi.com/*?newCid=*</Include>
+		<Include>*://comic.letv.com/*</Include>
+		<Include>*://static.loli.my/*</Include>
+		<Include>*://api.bilibili.*/*</Include>
+		<Require filename="hmac-sha1.js"/>
+		<Require filename="enc-base64-min.js"/>
+	</Script>
+	<Script author="AC" basedir="AC-百度Favicon" checkRemoteUpdates="1" dependhash="68d7fc41c4a475d08ba3b902be022c5967e8c17a" description="百度Favicon、谷歌Favicon" enabled="true" filename="AC-%E7%99%BE%E5%BA%A6Favicon.user.js" installTime="1459605547329" modified="1459612088413" name="AC-百度Favicon" namespace="BlockKafanTopicinGoogle" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="77e69b8a-95a5-49f7-b4c6-687e15d0fcd7" version="0.3.5" installurl="https://greasyfork.org/scripts/18387-ac-%E7%99%BE%E5%BA%A6favicon/code/AC-%E7%99%BE%E5%BA%A6Favicon.user.js" updateurl="https://greasyfork.org/scripts/18387-ac-%E7%99%BE%E5%BA%A6favicon/code/AC-%E7%99%BE%E5%BA%A6Favicon.user.js" icon="icon.jpg">
+		<Grant>none</Grant>
+		<Include>http://www.baidu.com/*</Include>
+		<Include>https://www.baidu.com/*</Include>
+		<Include>/^https?\:\/\/encrypted.google.[^\/]+/</Include>
+		<Include>/^https?\:\/\/www.google.[^\/]+/</Include>
+	</Script>
+	<Script author="AC" basedir="AC-从Google_Baidu_Bing搜索结果中屏蔽卡饭教程" checkRemoteUpdates="1" dependhash="68d7fc41c4a475d08ba3b902be022c5967e8c17a" description="从Google Baidu Bing Haosou Youdao搜索结果中屏蔽'卡饭教程'" enabled="false" filename="AC-%E4%BB%8EGoogle_Baidu_Bing%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E4%B8%AD%E5%B1%8F%E8%94%BD%E5%8D%A1%.user.js" installTime="1459479413800" modified="1459479413800" name="AC-从Google Baidu Bing搜索结果中屏蔽卡饭教程" namespace="BlockKafanTopicinGoogle" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="d6c2ba4d-64b0-4c13-8ea0-ca387382bb6a" version="0.2.9" installurl="https://greasyfork.org/scripts/13404-ac-%E4%BB%8Egoogle-baidu-bing%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E4%B8%AD%E5%B1%8F%E8%94%BD%E5%8D%A1%E9%A5%AD%E6%95%99%E7%A8%8B/code/AC-%E4%BB%8EGoogle%20Baidu%20Bing%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E4%B8%AD%E5%B1%8F%E8%94%BD%E5%8D%A1%E9%A5%AD%E6%95%99%E7%A8%8B.user.js" updateurl="https://greasyfork.org/scripts/13404-ac-%E4%BB%8Egoogle-baidu-bing%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E4%B8%AD%E5%B1%8F%E8%94%BD%E5%8D%A1%E9%A5%AD%E6%95%99%E7%A8%8B/code/AC-%E4%BB%8EGoogle%20Baidu%20Bing%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E4%B8%AD%E5%B1%8F%E8%94%BD%E5%8D%A1%E9%A5%AD%E6%95%99%E7%A8%8B.user.js" icon="icon.jpg">
+		<Grant>none</Grant>
+		<Include>/^https?\:\/\/encrypted.google.[^\/]+/</Include>
+		<Include>/^https?\:\/\/www.google.[^\/]+/</Include>
+		<Include>http://www.baidu.com/*</Include>
+		<Include>https://www.baidu.com/*</Include>
+		<Include>/^https?\:\/\/[\w]+.bing.[^\/]+/</Include>
+		<Include>/^https?\:\/\/www.haosou.com+/</Include>
+		<Include>/^https?\:\/\/www.youdao.com/</Include>
+		<Include>/^https?:\/\/www.sogou.com/</Include>
+		<Include>/^https?:\/\/search.disconnect.me/</Include>
+	</Script>
+	<Script author="AC" basedir="AC-百度去广告" checkRemoteUpdates="1" dependhash="68d7fc41c4a475d08ba3b902be022c5967e8c17a" description="去掉百度的推广链接" enabled="false" filename="AC-%E7%99%BE%E5%BA%A6%E5%8E%BB%E5%B9%BF%E5%91%8A.user.js" installTime="1459479648969" modified="1459479648969" name="AC-百度去广告" namespace="ACNoAdd" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="e2c9c714-77d8-4a3a-bccd-fc6d78f37344" version="1.0" installurl="https://greasyfork.org/scripts/17848-ac-%E7%99%BE%E5%BA%A6%E5%8E%BB%E5%B9%BF%E5%91%8A/code/AC-%E7%99%BE%E5%BA%A6%E5%8E%BB%E5%B9%BF%E5%91%8A.user.js" updateurl="https://greasyfork.org/scripts/17848-ac-%E7%99%BE%E5%BA%A6%E5%8E%BB%E5%B9%BF%E5%91%8A/code/AC-%E7%99%BE%E5%BA%A6%E5%8E%BB%E5%B9%BF%E5%91%8A.user.js" icon="icon.jpg">
+		<Grant>none</Grant>
+		<Include>http://www.baidu.com/*</Include>
+		<Include>https://www.baidu.com/*</Include>
+	</Script>
+	<Script author="NLF&amp;锐经(修改)" basedir="searchEngineJump_modified_version_from_NLF" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="方便的在各个引擎之间跳转" enabled="true" filename="searchEngineJump_modified_version_from_NLF.user.js" installTime="1459486803649" modified="1459486803649" name="searchEngineJump modified version from NLF" namespace="https://greasyfork.org/zh-CN/users/35510-rayjing" noframes="false" runAt="document-start" updateMetaStatus="unknown" uuid="650754e7-3a0a-4554-8626-fb69ce3d0fbb" version="4.0.4.3" installurl="file:///F:/Media/searchEngineJump_modified_version_from_NLF.user/searchEngineJump_modified_version_from_NLF.user.js" updateurl="file:///F:/Media/searchEngineJump_modified_version_from_NLF.user/searchEngineJump_modified_version_from_NLF.user.js">
+		<Grant>none</Grant>
+		<Include>*google*</Include>
+		<Include>*baidu.com*</Include>
+		<Include>*bing.com*</Include>
+		<Include>*so.com*</Include>
+		<Include>*sogou.com*</Include>
+		<Include>*youdao.com*</Include>
+		<Include>*soso.com*</Include>
+		<Include>*soku.com*</Include>
+		<Include>*bilibili.tv*</Include>
+		<Include>*acfun.tv*</Include>
+		<Include>*youtube.com*</Include>
+		<Include>*so.tv.sohu.com*</Include>
+		<Include>*so.letv.com*</Include>
+		<Include>*so.1ting.com*</Include>
+		<Include>*xiami.com*</Include>
+		<Include>*so.yinyuetai.com*</Include>
+		<Include>*pixiv.net*</Include>
+		<Include>*flickr.com*</Include>
+		<Include>*www.nicovideo.jp*</Include>
+		<Include>*cn.picsearch.com*</Include>
+		<Include>*deviantart.com*</Include>
+		<Include>*jpg4.info*</Include>
+		<Include>*yyets.com*</Include>
+		<Include>*baiduyun.me*</Include>
+		<Include>*oabt.org*</Include>
+		<Include>*ktxp.com*</Include>
+		<Include>*dmhy.org*</Include>
+		<Include>*shooter.cn*</Include>
+		<Include>*simplecd.me*</Include>
+		<Include>*ed2000.com*</Include>
+		<Include>*taobao.com*</Include>
+		<Include>*search.jd.com*</Include>
+		<Include>*search.suning.com*</Include>
+		<Include>*search.dangdang.com*</Include>
+		<Include>*amazon.cn*</Include>
+		<Include>*s.mall.360.cn*</Include>
+		<Include>*iciba.com*</Include>
+		<Include>*dict.cn*</Include>
+		<Include>*dict.hjenglish.com*</Include>
+		<Include>*zdic.net*</Include>
+		<Include>*wikipedia.org*</Include>
+		<Include>*zhihu.com*</Include>
+		<Include>*so.hudong.com*</Include>
+		<Include>*docin.com*</Include>
+		<Include>*ishare.iask.sina.com.cn*</Include>
+		<Include>*s.weibo.com*</Include>
+		<Include>*douban.com*</Include>
+		<Include>*search.t.qq.com*</Include>
+		<Include>*twitter.com*</Include>
+		<Include>*facebook.com*</Include>
+		<Match>*://*/*</Match>
+	</Script>
+</UserScriptConfig>

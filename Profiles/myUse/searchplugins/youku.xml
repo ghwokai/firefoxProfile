@@ -1,0 +1,11 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>Youku</os:ShortName>
+<os:Description>Youku</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABc0lEQVQ4ja2TPW7CQBCFn6gCihNaUARIKUgUOUHrNOki5QCmIq0LqlCn4AJuXeQA2yCRJqagsdliS0pugAuLyl75CJMCbNnYFPlZabp93868NwscnyG3YHLZGLukTZakTZbUGLsEk0sMuVW6nxP2YPJN216T7oZkCFUo3Q2pba8JJt9gyHslcW00S27nARlCERMqYX7ksFVssVVsMT9ymFCJIRTdzgOqjWZJEWLyTSZexXywCJrHDQ4WQZOtYp5CYPJNNnPbXmdiAHCAngP0jiEAkELa9pr2nphc6m5ITKgkfXlx15fb9zfyHh/kB/Bc6kSoRHfDvbGNsbt/3Y+c9JLX70qaWkRTi3avL+Rdtwog5keOIdQ+HW2yTNvPIvJal5LMe8rX7qlLn9qZPIxhGUKRNlmeAJxD0g0oX7sO6KsOpwSoHCEH2HVA8gI8b2phhEoT65Dbq7Kw0sRTMVZFWB0j8MdFAv5hlQ+Q33+mIuhH3/kb9hmFnVubtEoAAAAASUVORK5CYII=</os:Image>
+<SearchForm>http://www.youku.com/</SearchForm>
+<os:Url type="text/html" method="GET" template="http://www.soku.com/search_video/q_{searchTerms}" resultDomain="soku.com">
+
+</os:Url>
+</SearchPlugin>
+

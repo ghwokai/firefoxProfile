@@ -1,0 +1,66 @@
+pp.163.com##.pp-footer.footer
+pp.163.com##.j-com.p-show.p-body > .clearfix.body > .g-side > div
+pp.163.com##.f-trans.m-fixedPCA4d
+pp.163.com###J-quickMark
+pp.163.com##.adpushwin
+pp.163.com##.g-mainwraper-footAuthor.g-mainwraper
+pp.163.com##.f-clear.g-mainwraper-cmt.g-mainwraper
+pp.163.com##.g-mainwraper-picsetinfo.g-mainwraper
+pp.163.com##.main-area > .z-tag.m-picAct
+
+photo.poco.cn###J-global-header
+photo.poco.cn###J-global-topbar
+my.poco.cn###header > .word_break.header_banner
+my.poco.cn###J-global-topbar
+my.poco.cn###show_type_sel_top
+my.poco.cn###J_comment_container
+my.poco.cn###poco_page
+my.poco.cn###footer
+my.poco.cn###content > .module_nt > .module_body > .act_detail_info > .lastphoto_table
+my.poco.cn###content > .module_nt > .module_body > .act_detail_info > .d_line
+my.poco.cn###content > .module_nt > .module_body > .act_detail_info > .word_break.mb10.mt15.font_color_default.content
+my.poco.cn###content > .module_nt > .module_body > .act_detail_info > h2
+my.poco.cn###content > .module_nt > .module_body > .act_detail_info > .clearfix.lh22
+my.poco.cn###content > .module_nt > .module_body > .act_detail_info > .pb5.clearfix.voteArea
+my.poco.cn###J_img_list  .clearfix.img_list_info
+
+www.lesmao.net###ls-content-pic-post .picvip
+www.lesmao.net###postlist
+www.lesmao.net###ls-content-vip
+www.lesmao.net###ls-content-down-box > .ls-content-down-c > .ls-content-down-d
+www.lesmao.net###ft
+www.lesmao.net###ls-content-nav
+www.lesmao.net###header-nav
+www.lesmao.net###tabindex
+www.lesmao.net###index-wel
+www.lesmao.net###right
+
+bbs.kafan.cn###ct > .mn > .comeing_box:nth-of-type(1) > .bm
+bbs.kafan.cn###coeming_hd
+bbs.kafan.cn###ft
+
+www.ttmeiju.com###midder > .contentbox:nth-of-type(3) > .super_notice
+
+www.santaihu.com##.vmid.wrapper > .container > .content > .single > .postmeta
+www.santaihu.com###wumiiDisplayDiv
+www.santaihu.com##.vmid.wrapper > .container > .content > .single > .postnavi
+www.santaihu.com##.vmid.wrapper > .container > .content > .single > .relatedrandom
+www.santaihu.com##.vmid.wrapper > .container > .content > .single > .posttool
+
+bbs.3dmgame.com###ct > .mn > .m_bm.bm.fl > .cl.flg.bmw.bm:nth-of-type(1)
+bbs.3dmgame.com###ct > .mn > .m_bm.bm.fl > .cl.flg.bmw.bm:nth-of-type(2)
+
+! 2016/3/31 下午5:57:15 https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&ch=&tn=monline_dg&bar=&wd=%E9%80%BC%E4%B9%8E&oq=bihu&rsv_pq=f158cb9a00006593&rsv_t=c5ddtbXV36pU%2F7jIh1nxQ1hAiPrUw7eGHZUSieCmbJaS3LXWgd5zkWzBKiHPlRlY5g&rsv_enter=1&inputT=13928
+www.baidu.com##.xpath-log.result-op
+
+! 2016/3/31 下午8:01:15 http://www.youku.com/
+www.youku.com###qheader_msg_panel
+
+! 2016/4/4 下午2:38:06 https://btdigg.org/search?info_hash=&q=%E7%99%BD%E7%9F%B3%E8%8C%89%E8%8E%89%E5%A5%88
+btdigg.org###logo
+
+! 2016/4/7 下午3:35:45 http://blog.163.com/aprilthirty60@126/blog/static/886135782012631847569/
+blog.163.com##.js-show-regGuideLayer.f-trans.m-regGuideLayer
+
+! 2016/4/7 下午3:36:37 http://blog.163.com/aprilthirty60@126/blog/static/886135782012631847569/
+blog.163.com###blog-163-com-topbar

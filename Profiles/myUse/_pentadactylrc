@@ -1,0 +1,139 @@
+"1.1
+
+loadplugins '\.(js|penta)$'
+group user
+
+"============================================
+command! -description='Edit _pentadactylrc file' erc -javascript editor.editFileExternally(Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("ProfD", Components.interfaces.nsIFile).path+"\\_pentadactylrc")
+
+command! -description='Reload _pentadactyl rc file' fresh source $HOME/_pentadactylrc
+
+""command! -description='Open _pentadactylrc file' rc -javascript gBrowser.selectedTab = gBrowser.addTab("file:///"+Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("ProfD", Components.interfaces.nsIFile).path+"/_pentadactylrc")
+
+"command! -nargs=? switchenginesearch exe 'o <args> ' + (buffer.lastInputField?buffer.lastInputField.value:'')
+
+"=============================================="
+"highlight Hint text-transform: uppercase; font-family : "Helvetica Neue", "Helvetica", "Arial", "Sans"; font-weight: bold; font-size: 11px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); color: #302505; padding: 1px 3px 0px 3px; background: -moz-linear-gradient(top, #FFF785, #FFC542); border: 1px #C38A22 solid; -moz-border-radius: 3px; -moz-box-shadow: 0 3px 7px 0px rgba(0,0,0,0.3);
+"highlight Hint::after content: attr(text) !important; font-size: 8pt;
+"highlight HintActive background-color: inherit !important
+"highlight HintElem background-color: inherit !important
+"highlight HintImage opacity: .5 !important;
+"=============================================="
+
+map -modes=n,v t -javascript content.getSelection().toString()!=""?dactyl.execute(":tabopen "+ content.getSelection()):CommandExMode().open("tabopen ")
+
+map -modes=n,v o -javascript content.getSelection().toString()!=""?dactyl.execute(":open "+ content.getSelection()):CommandExMode().open("open ")
+
+
+map -count -modes=n,v ,r <count>:restart<Return>
+map -count -modes=n,v ,f <count>:fresh<Return>
+
+map -count -modes=n,v q -builtin <count>gT
+map -count -modes=n,v w -builtin <count>gt
+map -count -modes=n,v v -builtin <count><C-b>
+map -count -modes=n,v e <count><C-^>
+""map -count -modes=n,v Q <count>g0
+""map -count -modes=n,v W <count>g$
+map -count -modes=n,v p -builtin <count>P
+map -count -modes=n,v P -builtin <count>p
+map -count -modes=n,v j -builtin <count>5j
+map -count -modes=n,v k -builtin <count>5k
+
+""<ctrl>-z：暂时禁用插件，恢复浏览器默认的快捷键；<esc>：重新启用插件。
+map -count -modes=c,i,n,t,v <C-a> <Pass>
+map -count -modes=c,i,n,t,v <C-c> <Pass>
+map -count -modes=c,i,t <C-v> <Pass>
+map -count -modes=c,i,t <C-x> <Pass>
+map -count -modes=c,i,t <C-z> <Pass>
+map -count -modes=c,i,n,t <C-f> <Pass>
+map -count -modes=c,i,n,t,v <C-b> <Pass>
+map -count -modes=c,i,n,t,v <C-l> <Pass>
+map -count -modes=c,i,n,t,v <C-`> <Pass>
+
+map -count -modes=n,v h -builtin <count>H
+map -count -modes=n,v l -builtin <count>L
+map -count -modes=n,v H -builtin <count>h
+map -count -modes=n,v L -builtin <count>l
+map -count -modes=n,v U -builtin <count>:undo<Space>
+map -count -modes=n,v B -builtin <count>:buffers<Return>;o
+map -count -modes=n <C-q> -builtin <count>:tabmove!<Space>-1<Return>
+map -count -modes=n <C-w> -builtin <count>:tabmove!<Space>+1<Return>
+""map -description='Open urls based on the current clipboard contents' -modes=n,v <C-p> -javascript tabs.openURLs()
+map -description='Yank all locations to the clipboard' -modes=n,v <C-y> -ex yank :tabdo :echo buffer.uri.spec
+"map -count -modes=n,v s <count>gi<Esc><Space>:switchenginesearch<Space>
+
+"ie打开当前网页
+map <Leader>ie -js io.run("c:\\program files\\internet explorer\\iexplore.exe", [buffer.URL])
+"360打开当前网页
+map <Leader>360 -js io.run("D:\\Program Files\\360Chrome\\Chrome\\Application\\360chrome.exe", [buffer.URL])
+
+
+
+"" ]]/[[ turn next/previous page
+"set nextpattern='(下|后)一?(页|頁|篇|章|张)|次のページ|次へ','^\bnext\b','\bnext\b','\bsuivant\b','^(>|›)$','^(>>|»)$','^(>|»)','(>|»)$','\bmore\b'
+
+"set nextpattern=\s*下一页|下一张|下一篇|下页|后页\s*,^\bnext\b,\\bnext\\b,^>$,^(>>|»)$,^(>|»),(>|»)$,\\bmore\\b
+"set previouspattern=\s*上一页|上一张|上一篇|上页|前页\s*,^\bprev|previous\b,\\bprev|previous\\b,^<$,^(<<|«)$,^(<|«),(<|«)$
+
+set nextpattern='^\s*[下后][一]?[页张个篇章节步]\s*$','^(next|Next)$','^(>>|»)$','^(>|»)','(>|»)$'
+set previouspattern='\s*[上前][一]?[页张个篇章节步]\s*$','^(prev|previous)$','^<$,^(<<|«)$,^(<|«),(<|«)$'
+
+
+ "用来关闭左右标签
+map -modes=n,v c -js gBrowser.removeTab(gBrowser.mCurrentTab.boxObject.nextSibling)
+map -modes=n,v x -js gBrowser.removeTab(gBrowser.mCurrentTab.boxObject.previousSibling)
+"=========================快捷网址==============================
+""map <leader>tkf :tabopen bbs.kafan.cn/forum-215-1.html<cr> -bulitin
+""map <leader>t :tabopen <cr> -bulitin
+command! -description='卡饭' ttkf :tabopen bbs.kafan.cn/forum-215-1.html
+""command! -description='' tt :tabopen
+""command! -description='' tt :tabopen
+"======================================================="
+" 查单词, 结合dict插件翻译选中字符串
+ ""map -modes=n,v -silent W -js do_selection("dict")
+ ""map s -description dcit插件-dict.cn -js do_selection(":dict -e d ")
+"" map sg -description dcit插件-google翻译 -js do_selection(":dict -e g ")
+ ""map sy -description dcit插件-有道 -js do_selection(":dict -e y ")
+" map sq -description dcit插件-qq -js do_selection(":dict -e q ")
+ ""map sz -description dcit插件-汉典 -js do_selection(":dict -e z ")
+
+ ""command! dict -nargs=* tabopen http://dict.cn/<args>
+ ""map <silent> W :exe ":dict "+content.getSelection()<CR>
+"========================================================="
+
+set defsearch=b
+set guioptions=bTrs
+set hintkeys=asdfqwer
+set maxitems=10
+"colorscheme solarized-dark
+colorscheme solarized-light
+set runtimepath=~/pentadactyl,$HOME,$HOME/pentadactyl
+"set urlseparator='(\||\s+)'
+style chrome://* #dactyl-commandline-command input {ime-mode: inactive;}
+style chrome://* #dactyl-statusline-field-commandline-command input {ime-mode: inactive;}
+"外部编辑器ERC打开配置文件"
+set editor='d:\\vim\\vim74\\gvim.exe'
+"=========================================================="
+" 自定义js {{{
+js <<EOF
+    // 如果选中执行 命令+选中的，否则执行原命令
+var do_selection = function(command){
+	// 原先的content.getSelection()只会get到空字符串，所以需要用buffer.focusedFrame.getSelection()
+	var str=content.getSelection();
+	// 保证command最后一个是空格
+	if(command.slice(-1) != " ")
+		command +=  " ";
+	if(str != ""){
+		dactyl.execute(command + str);
+		/* dactyl.open(str, {where: dactyl.CURRENT_TAB})
+		为了保持所选文字的完整信息，就需要使用Pentadactyl给的util.domToString()函数，
+		同时:tabopen命令由于不能处理接收到的"\r\n"换行符，所以直接交由dactyl.open处理
+		*/
+	}else{
+		CommandExMode().open(command);
+	}
+};
+EOF
+" }}}
+
+" vim: set ft=pentadactyl:

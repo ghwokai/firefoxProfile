@@ -1,0 +1,14 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>bt天堂</os:ShortName>
+<os:Description>bt天堂</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABj0lEQVQ4jc2Qv0tCURTHHxSihD+2loj+gcChGppe9ANEhBY3B6Gi4UElhYlDFxFxcHBQKWh4JEVFRIVUxHtxIjEqhwsWPMzkUQYOBfdPOA3x9HVzaKsDn+F+75cPnCMI/2KgxsSk0iBmCpWP6V8LkkqDuKK3yOPdfITfCS5eiDNcxP61EvOuV2Aweac7w0V0hotI35h79aSW9q5XgKclSJzXiSOkoidTBkEQBJ0xlyOkoiOkImjvoidTBuNtpi04rRK7VMDRxBUFrSlmL+tLdqmAfctnTGfMlS+9Bo2OXSrgfJ7KidMqaQtOHkjP7D7y5K+fg+ZVjRy0pvjtBvFDSmwBGXvnttlk/BxGosfUFpDRFpARHhqtcqfsS7B/R6z+HE6Qo9Zhhlf2qNWfw5msKhuZ1Z9Dqz/3UxDbKRGLL4Xjkd2WYGhBpnxm8aXQ4kshUJ0TbAHpnophJ9IHN0tGz8iA1jiBrJAuMYI8Y4sboDPmMnpGrpQ5gaY3B5SyJpq5f9LdAjeilAFRykCnv7+bT5ssG6JMalspAAAAAElFTkSuQmCC</os:Image>
+<os:Url type="text/html" method="GET" template="http://www.bttiantang.com/s.php" resultDomain="bttiantang.com">
+  <os:Param name="q" value="{searchTerms}"/>
+  <os:Param name="sitesearch" value="www.bttiantang.com"/>
+  <os:Param name="domains" value="bttiantang.com"/>
+  <os:Param name="hl" value="zh-CN"/>
+  <os:Param name="ie" value="UTF-8"/>
+  <os:Param name="oe" value="UTF-8"/>
+</os:Url>
+</SearchPlugin>

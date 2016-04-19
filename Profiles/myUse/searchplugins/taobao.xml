@@ -1,0 +1,16 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>taobao</os:ShortName>
+<os:Description>taobao</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAqUlEQVQ4jaWTsRGAIAxFs4Gj0DgGtTtQOIY7sAO1EzCOOxgLiCQRUfTf/TtE/zPBCAAAGAPiMvU5BgQRJjkj1zfe7JAguEw5tKfQPBYAX5NWn/YzpADmsQRWLyHcdP8C0IGa+H4TUGtFgy8AZ2Tp3RVwgH7b6wpaLfw6g8cWuGpnwStErHxG/aA2Vw4XQAxpLBtj2xxl+h82OwgQXd/5DGudpX0VOtMVPgBRELV9pv7F+wAAAABJRU5ErkJggg==</os:Image>
+<os:Url type="text/html" method="GET" template="https://s.taobao.com/search" resultDomain="s.taobao.com">
+  <os:Param name="q" value="{searchTerms}"/>
+  <os:Param name="commend" value="all"/>
+  <os:Param name="ssid" value="s5-e"/>
+  <os:Param name="search_type" value="item"/>
+  <os:Param name="sourceId" value="tb.index"/>
+  <os:Param name="spm" value="a21bo.7724922.8452-taobao-item.2"/>
+  <os:Param name="ie" value="utf8"/>
+  <os:Param name="initiative_id" value="tbindexz_20160313"/>
+</os:Url>
+</SearchPlugin>

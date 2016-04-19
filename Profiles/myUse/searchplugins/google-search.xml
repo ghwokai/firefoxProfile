@@ -1,0 +1,16 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>Google Search</os:ShortName>
+<os:Description>Google Search</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+ElEQVQ4jYWTv2tTURTH3yIY9H9phFZsnaxiKy6VgglYF4c6uPgDHZxEqA7qIqYxNdChFdoXENRKURTb0aG0kta0ixQfWJNouyTpezf3nI9Dk6fpS/TAd7mc7/ee7/fe4zj7yhhzRETSqrqhqkEDGyKSNsbE9/eHBcREZEJVlQ6lqioiGc/zYhGyqi4CaOBTdafZvjxCabCP0kAv26MXqM5OoYHfFFpoEbHWPgOwxS1+XUpQOtnTFju3roTTWGszoWdVVfX9P+Qzx6lkU5j8Mia/QiWb4ufIEPVvmy12jDFxB0gD1JefUB7qojTQi8mvRP1bGzkTkXFHVTcA6p96CF7GqLl3OmXYLtSCo6oBQP3DIervDyDlNy1N/WOVCG7P7jYF/DYCc/8VuDFdaxFoWDhK8d1hXn1+1HHkuy926R+r8GAufM6CIyJpgM2vEwy6ZznmnmeptBYhr3+3nL6/N8Fiod4MMeUYY+Kqqr4NSMxfpXtmmD43yeOVKZaKayyXvpBdzXFq8ikn7u0wmq1hRQHEGNPlOI7jiEgG4Ee1TGL+Gt0zw21xLveQrR1p3p4Of6LneTFVXQAIrOH5+msuvr1Jn5uk102QnL9OdjVH1YThfQQOtuyD53kxa23mX8u0d7GkI+R96xwXkXFVLaiq30BBRFKh57/qN5uR+1ZTBnmZAAAAAElFTkSuQmCC</os:Image>
+<SearchForm>https://www.google.com.hk</SearchForm>
+<os:Url type="text/html" method="GET" template="https://www.google.com.hk/search" resultDomain="google.com.hk">
+  <os:Param name="num" value="20"/>
+  <os:Param name="newwindow" value="1"/>
+  <os:Param name="safe" value="off"/>
+  <os:Param name="btnG" value="Search"/>
+  <os:Param name="q" value="{searchTerms}"/>
+  <os:Param name="oq" value=""/>
+  <os:Param name="gs_l" value=""/>
+</os:Url>
+</SearchPlugin>

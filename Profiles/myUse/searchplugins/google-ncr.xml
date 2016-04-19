@@ -1,0 +1,17 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>Google ncr</os:ShortName>
+<os:Description>Google ncr</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB2klEQVQ4jZ2Tv2tTcRTF3yIY9H8xghUNTlFsxaXikIB1UVAHFxU6uClUBHUR05ia4lAL9mUQqqIUUezmoI3E4MsixcGaF1M7JPG9b969H4e+hLy+BMELZ/lyz/nec39Y1o4A9otIXlVrquqHqIlIHkjuzB8kJkTkEaCMCFVVESkAiRg5CIJVAPU92vYTNi9N4U6kcMdTbF44Q3tpAfW9ntD7iEj4M0F9g+b5DO7RsaHYmr7cr0ZECn3PgKrv0Ty3TW6cOEJrPoeplDGVMq35HM2pSYLv6xE7xpikJSIPAbprD/g1mcQdT2Eq5XgDgiD2JCKzlqrWAIIPY/jLCTr2jVE9HNZUx1JVH6D7dg/dN7vQxstIUnqmFcP1pT89Ae+/BK4tRgVCCwepr+xl+fO9kSXffOaRnmlx50V/nI4Vbhjr3+aYsE9yyM7wya3GyLUfwvHb2xWsOt3ec84CkqqqfmDIvLrCgaenSdlZ7pcX+Fivstb4SvFLiWOPC6RvbXGx2EGkP8Z9vUWaA/jZbpANRYbhVOkuG78FABHJR1Y5XE/8wLDoPOfsyjSpUpbDdpbs66sUqyXa3U7P+ztg97BjKqjqv44pHyMPhjEmKSKzquqoqhfCAXJ9zwPxF4Fx/S9aNi8yAAAAAElFTkSuQmCC</os:Image>
+<os:Url type="text/html" method="GET" template="https://www.google.com/search" resultDomain="google.com">
+  <os:Param name="num" value="20"/>
+  <os:Param name="newwindow" value="1"/>
+  <os:Param name="safe" value="off"/>
+  <os:Param name="site" value=""/>
+  <os:Param name="source" value="hp"/>
+  <os:Param name="btnG" value="Search"/>
+  <os:Param name="q" value="{searchTerms}"/>
+  <os:Param name="oq" value=""/>
+  <os:Param name="gs_l" value=""/>
+</os:Url>
+</SearchPlugin>

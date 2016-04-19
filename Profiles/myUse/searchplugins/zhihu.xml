@@ -1,0 +1,11 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>知乎</os:ShortName>
+<os:Description>知乎</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAChElEQVQ4jW2Rz2sTQRTH938wM7O7QazixYNQwf9CvAviwaptY7LZJJvadJMIetWrIlhB8KJgBYtaQ38o7qbBNqGZjasielC0goIKKqI9fDxsmqJ04MvM9z3eh/feGFb1WWDXY+xa71/1Y1Z1672p9FYuMNL1mHQ9xvIjjt56h12NkqL/QHY9xqr2Brl0PcauxxjpWoztRxy8GANw4EKMORVhV3vYtRjL37otv8eeczF7z8eka4kMuxZj+5pLzXW2O4enX20bNytd7FqMYfsRQ9U2339tcOTKU8TJGQDE+CwyN490FgZeZB4gxmYTQLmFXe1hWFMRptdi/9kAMzePHJ8DQGYaqOIy0lna8m6IzDQAUG6I7W8CznQY8lfYfbbD0GQzKXBDVCVCuuG23iw1+4BKhDXZ5e3X39vOeuRaslyZD1GTEeYmoNjEmuoDVHkVcXqR1Kl7DPtJi6kTdxDjDcRYfyQnQE1oVD4YeLsSYZgTGnNiDVVqIbOPGbmuk6WNPUTmm4jMYuJzAaqsUU4fkAswJyMMayJCehqzrJGFVcI33wC4uvwR01tDZJMCkQ2Qnh545YQoT2OYZY30NLLU5dDl5/z4vcFwJWl7uvUJmX0CwOcffzh24/VgNyIbYJY1hvI0ytPsrKzx5ecGldsvSI3MssuZ6///EjuO3wXg/ddfDDlzpE7cR+SWkw6UpzGLHXrrP5maeYk49RCZCxHjS+x0F1G5kNToAjdXPrCv3CA1uoDMNZFuG3MTIN0VZGaJ1GgD4TRRxQ7KXUXmWwi3jXBapEbnEZlHqEIb5WlUqZt0IErdQLltVP4pMr+CKnRQJf2vCh2U20a5bWSxm8SKXURhLfwLcLOtI3u/j/MAAAAASUVORK5CYII=</os:Image>
+<SearchForm>https://www.zhihu.com/</SearchForm>
+<os:Url type="text/html" method="GET" template="https://www.zhihu.com/search" resultDomain="zhihu.com">
+  <os:Param name="type" value="content"/>
+  <os:Param name="q" value="{searchTerms}"/>
+</os:Url>
+</SearchPlugin>
