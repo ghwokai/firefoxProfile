@@ -1,0 +1,9 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>bilibili</os:ShortName>
+<os:Description>bilibili</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAsklEQVQ4jbWSOwrEMAxE1QpSTaXCpXwPnyEn8hlyIbW61WyR9ZIPhM2GHRAGIT1psEQOMrMAQHdvI+fuXUQIgMf6ndy9A+A8zzSz2OaWZeEb3K8ADQAz81Ps7r33zojgNE1xucGYqKpUVdZao9YarbXr9YfvOzEsiplFZvKuMnOFACBJqurX01WVJFdbAzDeb7TtOQFKKSylnJq2+f8CHlsYEpFd3Abc3uDnb3x8SE9P+QUeEQemazvuRgAAAABJRU5ErkJggg==</os:Image>
+<os:Url type="text/html" method="GET" template="http://search.bilibili.com/all" resultDomain="search.bilibili.com">
+  <os:Param name="keyword" value="{searchTerms}"/>
+</os:Url>
+</SearchPlugin>
