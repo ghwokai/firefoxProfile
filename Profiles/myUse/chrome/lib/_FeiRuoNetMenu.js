@@ -187,7 +187,7 @@ var Menus = [ //菜单设置
 				tooltiptext: 'http://who.cndns.com/',
 				image: "http://www.cndns.com/favicon.ico",
 				oncommand: function() {
-					FeiRuoNet_Menu.OpenAction(this.tooltipText, 'textDomain', "%BASEDOMAIN%", 'linkWhois')
+					FeiRuoNet_Menu.OpenAction(this.tooltipText, 'textDomain', "%BASEDOMAIN%", 'linkWhois');
 				}
 			}, {
 				label: "Whois(aizhan)",
@@ -225,7 +225,7 @@ var Menus = [ //菜单设置
 				tooltiptext: 'https://www.virustotal.com/#url',
 				image: "https://www.virustotal.com/static/img/favicon.ico",
 				oncommand: function() {
-					FeiRuoNet_Menu.OpenAction(this.tooltipText, 'url', gBrowser.selectedBrowser.currentURI.spec, 'btn-scan-url')
+					FeiRuoNet_Menu.OpenAction(this.tooltipText, 'url', gBrowser.selectedBrowser.currentURI.spec, 'btn-scan-url');
 				}
 			}, {
 				label: "WOT Scorecard",
